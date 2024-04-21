@@ -1,0 +1,11 @@
+.eslintrc.js
+jest.config.ts
+assetsTransformer.js
+global.d.ts
+src/__mocks__
+src/__mocks__/svgrMock.ts
+cypress.config.ts
+babel.config.js
+next.config.mjs
+
+
