@@ -1,0 +1,33 @@
+.joinTeamSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 128px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+  @media (max-width: $tablet) {
+    margin-bottom: 64px;
+  }
+
+
+  .sectionTitle {
+    max-width: 414px;
+    margin-bottom: 16px;
+    @include headingTwo;
+    text-align: center;
+
+    @media (max-width: $tablet) {
+      @include headingThree;
+    }
+  }
+
+  .sectionText {
+    max-width: 405px;
+    margin-bottom: 32px;
+    @include bodyOne;
+    text-align: center;
+  }
+}

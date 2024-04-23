@@ -1,0 +1,25 @@
+.button {
+  width: fit-content;
+  height: fit-content;
+  padding: 16px 48px;
+  background: $yellow;
+  font-size: $fz18;
+  font-weight: $bold;
+  line-height: 24px;
+  transition: all .5s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: $hoverYellow;
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px 30px;
+    font-size: $fz16;
+  }
+
+  @media (max-width: 450px) {
+    padding: 8px 24px;
+    font-size: $fz14;
+  }
+}

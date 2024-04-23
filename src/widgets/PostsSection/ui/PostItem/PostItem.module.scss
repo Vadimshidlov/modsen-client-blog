@@ -1,0 +1,43 @@
+.post__container {
+  padding: 32px 116px 25px 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  cursor: pointer;
+  transition: all .5s ease;
+
+  @media (max-width: 768px) {
+    padding: 16px 58px 12px 16px;
+  }
+
+
+
+  &:hover {
+    background: $lightYellow;
+  }
+
+  .post__authorInfo {
+    font-size: $fz16;
+    font-weight: $regular;
+
+    span {
+      color: $lightFiolet;
+    }
+
+  }
+
+  .post__text {
+    max-width: 370px;
+    font-size: $fz24;
+    font-weight: $bold;
+    line-height: 32px;
+
+    @media (max-width: 768px) {
+      font-size: $fz20;
+    }
+
+    @media (max-width: 450px) {
+      font-size: $fz16;
+    }
+  }
+}
