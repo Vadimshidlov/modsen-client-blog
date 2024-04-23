@@ -1,0 +1,13 @@
+.app__title {
+  font-size: $fz24;
+  font-weight: $extraBold;
+  color: $white;
+
+  @media (max-width: 900px) {
+    font-size: $fz20;
+  }
+
+  @media (max-width: 768px) {
+    font-size: $fz20;
+  }
+}

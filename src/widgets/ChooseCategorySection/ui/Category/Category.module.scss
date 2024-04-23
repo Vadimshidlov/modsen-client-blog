@@ -1,0 +1,48 @@
+.categoriesItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px;
+  max-width: 296px;
+  cursor: pointer;
+  transition: all .5s ease;
+  border: 1px solid $grey;
+
+  @media (max-width: 768px) {
+    padding: 24px;
+  }
+
+  @media (max-width: 660px) {
+    max-width: 100%;
+  }
+
+  &:hover {
+    background: $hoverYellow;
+  }
+
+
+  .categoryImage {
+    margin-bottom: 16px;
+  }
+
+  .categoryTitle {
+    font-size: $fz28;
+    font-weight: $bold;
+    line-height: 40px;
+    margin-bottom: 4px;
+
+    @media (max-width: 768px) {
+      font-size: $fz24;
+    }
+  }
+
+  .categoryText {
+    font-size: $fz16;
+    font-weight: $regular;
+    line-height: 28px;
+
+    @media (max-width: 768px) {
+      font-size: $fz14;
+    }
+  }
+}
