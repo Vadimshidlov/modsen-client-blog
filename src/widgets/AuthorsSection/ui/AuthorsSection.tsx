@@ -16,9 +16,7 @@ export function AuthorsSection({ isShortVerison }: AuthorsSectionPropsType) {
       <div className={styles.authorsInfoBlock}>
         <h2 className={styles.authorsTitle}>List of Authors</h2>
         <ul className={styles.authorsContainer}>
-          {authorsList.map(({
-            id, name, job, company, img,
-          }) => (
+          {authorsList.map(({ id, name, job, company, img }) => (
             <Author key={id} name={name} job={job} company={company} avatarSrc={img} />
           ))}
         </ul>

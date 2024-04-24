@@ -18,9 +18,7 @@ export type PostItemPropsType = {
   img: string | StaticImageData;
 };
 
-export function PostItem({
-  id, title, text, category, img,
-}: PostItemPropsType) {
+export function PostItem({ id, title, text, category, img }: PostItemPropsType) {
   return (
     <article className={styles.postContainer}>
       <div className={styles.postImageWrapper}>

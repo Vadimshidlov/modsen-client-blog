@@ -7,9 +7,7 @@ import { POSTS } from '@/shared/constants/posts';
 
 export function StartUpSection() {
   const featuredPost = POSTS.filter((postData) => postData.id === 1)[0];
-  const {
-    author, postDate, text, title,
-  } = featuredPost;
+  const { author, postDate, text, title } = featuredPost;
 
   return (
     <section className={styles.section__container}>
@@ -33,10 +31,7 @@ export function StartUpSection() {
         <div className={styles.text__container}>
           <span className={styles.textTitle}>
             By&nbsp;
-            <span>{author}</span>
-            {' '}
-            |
-            {postDate}
+            <span>{author}</span> |{postDate}
           </span>
           <span className={styles.text}>{text}</span>
           <Button>Read More &gt;</Button>

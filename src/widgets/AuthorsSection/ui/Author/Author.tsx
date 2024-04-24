@@ -11,18 +11,13 @@ export type AuthorPropsType = {
   company: string;
 };
 
-export function Author({
-  avatarSrc, name, job, company,
-}: AuthorPropsType) {
+export function Author({ avatarSrc, name, job, company }: AuthorPropsType) {
   return (
     <li className={styles.authorsItem}>
       <Image className={styles.authorsAvatar} alt="Mountains" src={avatarSrc} />
       <span className={styles.authorName}>{name}</span>
       <span className={styles.authorJobInfo}>
-        {job}
-        {' '}
-        @
-        {company}
+        {job} @{company}
       </span>
       <ul className={styles.authorSocial}>
         {SOCIALS.map(({ image, name: socialName, href }) => (

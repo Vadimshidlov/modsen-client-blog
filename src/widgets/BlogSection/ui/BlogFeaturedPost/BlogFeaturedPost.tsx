@@ -15,9 +15,7 @@ const inter = Inter({
 
 export function BlogFeaturedPost() {
   const featuredPost = POSTS.filter((postData) => postData.id === 1)[0];
-  const {
-    author, postDate, text, title, id, img,
-  } = featuredPost;
+  const { author, postDate, text, title, id, img } = featuredPost;
 
   return (
     <section className={styles.blogFeaturedPost}>
@@ -27,10 +25,7 @@ export function BlogFeaturedPost() {
           <h2 className={`${styles.postTitle} ${inter.variable}`}>{title}</h2>
           <span className={styles.postAuthor}>
             By&nbsp;
-            <span>{author}</span>
-            {' '}
-            |
-            {postDate}
+            <span>{author}</span> |{postDate}
           </span>
           <span className={styles.postText}>{text}</span>
           <Link href={`/posts/${id}`}>

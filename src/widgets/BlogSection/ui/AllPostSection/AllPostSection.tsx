@@ -9,9 +9,7 @@ export function AllPostSection() {
     <section className={`${styles.allPostSection} ${container.container}`}>
       <h1 className={styles.sectionTitle}>All Posts</h1>
       <div className={styles.postsContainer}>
-        {POSTS.slice(0, 5).map(({
-          id, title, text, img, category,
-        }) => (
+        {POSTS.slice(0, 5).map(({ id, title, text, img, category }) => (
           <PostItem key={id} id={id} title={title} text={text} img={img} category={category} />
         ))}
       </div>
