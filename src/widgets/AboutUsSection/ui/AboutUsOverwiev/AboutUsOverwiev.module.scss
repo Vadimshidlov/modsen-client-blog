@@ -1,0 +1,77 @@
+.owerviewContainer {
+  position: relative;
+
+  .owerviewImage {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .owerviewDataContainer {
+    position: absolute;
+    display: flex;
+    column-gap: 68px;
+    bottom: 23px;
+    left: 9%;
+    background: $yellow;
+    padding: 32px 48px;
+
+    @media (max-width: $tablet) {
+      padding: 16px 24px;
+      column-gap: 0px;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+    }
+
+    .owerviewDataItem {
+      display: flex;
+      flex-direction: column;
+
+      .owerviewDataTitle {
+        @include display;
+
+        @media (max-width: $tablet) {
+          @include headingThree;
+        }
+      }
+    }
+
+    @media (max-width: 1140px) {
+      position: static;
+    }
+  }
+
+  .colorBarContainer {
+    position: absolute;
+    left: 9%;
+    bottom: 0;
+    height: 23px;
+    width: 68%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    @media (max-width: 1140px) {
+      position: static;
+      width: 100%;
+    }
+
+    .firstColorBar {
+      height: 23px;
+      max-width: 780px;
+      width: 100%;
+      background: $yellow;
+    }
+
+    .secondColorBar {
+      height: 23px;
+      max-width: 282px;
+      width: 100%;
+      background: $lightFiolet;
+    }
+  }
+}

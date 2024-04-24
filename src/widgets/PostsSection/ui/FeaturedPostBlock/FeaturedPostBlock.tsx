@@ -12,7 +12,6 @@ export function FeaturedPostBlock() {
         <Image
           className={styles.post__image}
           alt="Mountains"
-          width="auto"
           src={featuredPost}
           placeholder="blur"
         />

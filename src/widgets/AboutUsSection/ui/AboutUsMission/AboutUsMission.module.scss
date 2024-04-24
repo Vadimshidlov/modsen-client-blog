@@ -1,0 +1,41 @@
+.aboutUsMissionContainer {
+  display: flex;
+  column-gap: 32px;
+  justify-content: space-between;
+  padding: 128px 108px 64px;
+  background: $lightPurple;
+  margin-bottom: 128px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 64px;
+    padding: 64px 54px 32px;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 32px;
+    padding: 32px 27px 16px;
+  }
+
+  .missionSubTitle {
+    font-size: $fz16;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+  }
+
+  .missionTitle {
+    margin-bottom: 16px;
+    max-width: 481px;
+    @include headingThree;
+
+    @media (max-width: $tablet) {
+      @include headingFive;
+    }
+  }
+
+  .missionText {
+    max-width: 516px;
+    @include bodyOne;
+  }
+}

@@ -1,3 +1,9 @@
+@mixin headingOne {
+  font-size: $fz48;
+  font-weight: $bold;
+  line-height: 64px;
+}
+
 @mixin headingTwo {
   font-size: $fz36;
   font-weight: $bold;
@@ -38,4 +44,16 @@
   font-size: $fz16;
   font-weight: $regular;
   line-height: 28px;
+}
+
+@mixin labelOne {
+  font-size: $fz14;
+  font-weight: $medium;
+  line-height: 20px;
+}
+
+@mixin display {
+  font-size: $fz56;
+  font-weight: $bold;
+  line-height: 64px;
 }

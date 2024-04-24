@@ -19,6 +19,7 @@
   .postImage {
     width: 70%;
     object-fit: cover;
+    height: auto;
 
     @media (max-width: 1200px) {
       width: 100%;

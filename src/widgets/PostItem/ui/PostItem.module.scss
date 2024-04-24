@@ -1,0 +1,61 @@
+.postContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .postImageWrapper {
+    width: 490px;
+    height: 318px;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+
+    .postImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .postContentBlock {
+    display: flex;
+    flex-direction: column;
+
+    .postSubTitle {
+      margin-bottom: 20px;
+      font-size: $fz16;
+      font-weight: $semiBold;
+      line-height: 20px;
+      letter-spacing: 3px;
+      color: $lightFiolet;
+    }
+
+    .postTitle {
+      margin-bottom: 16px;
+      max-width: 603px;
+      @include headingTwo;
+
+      &:hover {
+        color: $lightFiolet;
+      }
+
+      @media (max-width: $tablet) {
+        @include headingThree;
+      }
+
+      @media (max-width: $mobile) {
+        @include headingFour;
+      }
+    }
+
+    .postText {
+      max-width: 624px;
+    }
+  }
+}
