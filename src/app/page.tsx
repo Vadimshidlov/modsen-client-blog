@@ -1,7 +1,7 @@
 import { StartUpSection } from '@/widgets/StartUpSection/ui/StartUpSection';
 // import { Sen } from 'next/font/google';
 import { PostsSection } from '@/widgets/PostsSection/ui/PostsSection';
-import { AboutUsSection } from '@/widgets/AboutUsSection';
+import { HomeAboutUs } from '@/widgets/HomeAboutUs';
 import { ChooseCategorySection } from '@/widgets/ChooseCategorySection';
 import { SpecialPostSection } from '@/widgets/SpecialPostSection';
 import { AuthorsSection } from '@/widgets/AuthorsSection';
@@ -14,10 +14,10 @@ export default function Home() {
     <main>
       <StartUpSection />
       <PostsSection />
-      <AboutUsSection />
+      <HomeAboutUs />
       <ChooseCategorySection />
       <SpecialPostSection />
-      <AuthorsSection />
+      <AuthorsSection isShortVerison />
       <LogosSection />
       <TestimonialsSection />
       <JoinTeamSection />

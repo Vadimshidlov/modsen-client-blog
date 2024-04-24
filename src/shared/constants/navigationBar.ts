@@ -5,11 +5,11 @@ export const NAVIGATION_LINKS_SHORT = [
   },
   {
     text: 'Blog',
-    link: '/',
+    link: '/blog',
   },
   {
     text: 'About Us',
-    link: '/',
+    link: '/about',
   },
   {
     text: 'Contact us',
@@ -24,11 +24,11 @@ export const NAVIGATION_LINKS = [
   },
   {
     text: 'Blog',
-    link: '/',
+    link: '/blog',
   },
   {
     text: 'About Us',
-    link: '/',
+    link: '/about',
   },
   {
     text: 'Contact us',

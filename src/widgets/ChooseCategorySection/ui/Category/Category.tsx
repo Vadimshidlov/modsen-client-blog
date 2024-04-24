@@ -11,7 +11,7 @@ export type CategoryPropsType = {
 export function Category({ img, title, text }: CategoryPropsType) {
   return (
     <li className={styles.categoriesItem}>
-      <Image className={styles.categoryImage} src={img} />
+      <Image className={styles.categoryImage} src={img} alt="category-image" />
       <h4 className={styles.categoryTitle}>{title}</h4>
       <span className={styles.categoryText}>{text}</span>
     </li>

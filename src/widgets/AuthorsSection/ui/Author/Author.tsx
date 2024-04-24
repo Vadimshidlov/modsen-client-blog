@@ -1,11 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import styles from '@/widgets/AuthorsSection/ui/Author/Author.module.scss';
 import Link from 'next/link';
 import { SOCIALS } from '@/shared/constants/socials';
 
 export type AuthorPropsType = {
-  avatarSrc: string;
+  avatarSrc: string | StaticImageData;
   name: string;
   job: string;
   company: string;
@@ -16,7 +16,7 @@ export function Author({
 }: AuthorPropsType) {
   return (
     <li className={styles.authorsItem}>
-      <Image className={styles.authorsAvatar} alt="Mountains" width="auto" src={avatarSrc} />
+      <Image className={styles.authorsAvatar} alt="Mountains" src={avatarSrc} />
       <span className={styles.authorName}>{name}</span>
       <span className={styles.authorJobInfo}>
         {job}

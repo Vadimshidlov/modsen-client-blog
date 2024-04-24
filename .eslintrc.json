@@ -3,12 +3,11 @@
     "next/core-web-vitals",
     "airbnb",
     "airbnb-typescript",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
   ],
-  "plugins": [
-    "react",
-    "jest"
-  ],
+  "plugins": ["react", "jest"],
   "env": {
     "browser": true,
     "es6": true,

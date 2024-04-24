@@ -8,7 +8,12 @@ import specialPostImageSrc from '@/widgets/SpecialPostSection/assets/close-up-ph
 export function SpecialPostSection() {
   return (
     <section className={`${styles.specialPostSection} ${container.container}`}>
-      <Image src={specialPostImageSrc} className={styles.postImage} />
+      <Image
+        src={specialPostImageSrc}
+        className={styles.postImage}
+        placeholder="blur"
+        alt="special-post-image"
+      />
       <SpecialPost />
     </section>
   );

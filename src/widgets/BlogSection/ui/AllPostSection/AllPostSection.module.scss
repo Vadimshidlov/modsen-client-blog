@@ -1,0 +1,57 @@
+.allPostSection {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 68px;
+
+  .sectionTitle {
+    padding-top: 64px;
+    width: 100%;
+    @include headingOne;
+    margin-bottom: 64px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $grey;
+
+    @media (max-width: $tablet) {
+      @include headingTwo;
+      padding-top: 32px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: $mobile) {
+      @include headingThree;
+      padding-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .postsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    margin-bottom: 64px;
+
+    @media (max-width: $tablet) {
+      row-gap: 32px;
+    }
+  }
+
+  .paginationController {
+    align-self: center;
+    display: flex;
+    column-gap: 17px;
+
+    .paginationButton {
+      cursor: pointer;
+      background: transparent;
+      @include headingFour;
+      color: $grey;
+      transition: all .5s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        color: $darkFiolet;
+      }
+    }
+  }
+}

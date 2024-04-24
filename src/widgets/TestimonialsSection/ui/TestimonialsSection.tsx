@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from '@/widgets/TestimonialsSection/ui/TestimonialsSection.module.scss';
 import container from '@/shared/styles/container.module.scss';
 import { Inter } from 'next/font/google';
-import Image from 'next/image';
 import authorImgSrc1 from '@/shared/assets/authors/Floyd-Miles.png';
 import leftButtonSrc from '@/widgets/TestimonialsSection/assets/leftArrow.svg';
 import rightButtonSrc from '@/widgets/TestimonialsSection/assets/rightArrow.svg';
+import { AuthorTitleCard } from '@/shared/ui/AuthorTitleCard';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -30,13 +31,7 @@ export function TestimonialsSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
           </h3>
-          <div className={styles.authorInfoBlock}>
-            <Image className={styles.authorInfoAvatar} src={authorImgSrc1} alt="author-avatar" />
-            <div className={styles.authorInfoText}>
-              <span className={styles.authorInfoName}>Jonathan Vallem</span>
-              <span className={styles.authorInfoAddress}>New york, USA</span>
-            </div>
-          </div>
+          <AuthorTitleCard title="Jonathan Vallem" subtitle="New york, USA" src={authorImgSrc1} />
           <div className={styles.sliderController}>
             <div className={styles.sliderButton}>
               <Image

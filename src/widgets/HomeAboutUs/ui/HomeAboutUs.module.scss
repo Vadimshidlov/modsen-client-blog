@@ -1,0 +1,142 @@
+.about__section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 128px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 64px;
+  }
+
+  .colorBarContainer {
+    height: 23px;
+    width: 100%;
+    display: flex;
+    //flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    .firstColorBar {
+      height: 23px;
+      max-width: 780px;
+      width: 100%;
+      background: $yellow;
+    }
+
+    .secondColorBar {
+      height: 23px;
+      max-width: 282px;
+      width: 100%;
+      background: $lightFiolet;
+    }
+  }
+
+  .contentContainer {
+    padding: 96px 80px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 60px;
+    row-gap: 30px;
+    background: $lightPurple;
+
+    @media (max-width: 1000px) {
+      padding: 80px 60px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      padding: 40px 30px;
+      line-height: 35px;
+    }
+  }
+
+  .aboutBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .aboutSubTitle {
+      margin-bottom: 24px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 12px;
+      }
+    }
+
+    .aboutTitle {
+      font-size: $fz36;
+      font-weight: $bold;
+      line-height: 48px;
+      max-width: 494px;
+      width: 100%;
+      margin-bottom: 16px;
+
+      @media (max-width: 768px) {
+        font-size: $fz28;
+        line-height: 35px;
+      }
+
+      @media (max-width: 450px) {
+        font-size: $fz24;
+      }
+    }
+
+    .aboutText {
+      max-width: 515px;
+      font-size: $fz16;
+      line-height: 28px;
+      margin-bottom: 16px;
+      color: $grey;
+    }
+
+    .aboutButton {
+      font-size: $fz18;
+      font-weight: $bold;
+      line-height: 32px;
+      color: $lightFiolet;
+      transition: all .5s ease;
+
+      &:hover {
+        transform: scaleX(1.05);
+      }
+    }
+  }
+
+  .missionBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .missionSubTitle {
+      margin-bottom: 24px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 12px;
+      }
+    }
+
+    .missionTitle {
+      max-width: 481px;
+      font-size: $fz28;
+      font-weight: $bold;
+      line-height: 40px;
+      margin-bottom: 16px;
+
+      @media (max-width: 768px) {
+        font-size: $fz24;
+        line-height: 35px;
+      }
+
+      @media (max-width: 450px) {
+        font-size: $fz20;
+      }
+    }
+
+    .missionText {
+      max-width: 516px;
+      font-size: $fz16;
+      line-height: 28px;
+      margin-bottom: 16px;
+      color: $grey;
+    }
+  }
+}
