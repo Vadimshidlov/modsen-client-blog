@@ -1,0 +1,51 @@
+.searchTagsContainer {
+  .searchTagsTitle {
+    margin-bottom: 24px;
+    @include headingTwo;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 20px;
+      @include headingFour;
+    }
+  }
+
+  .searchTagsList {
+    display: flex;
+    // column-gap: 16px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @media (max-width: $tablet) {
+      row-gap: 10px;
+    }
+
+    .searchTagItem {
+      font-size: $fz14;
+      font-weight: $bold;
+      line-height: 32px;
+      padding: 8px 38px;
+      border: 2px solid $grey;
+      border-radius: 28px;
+      cursor: pointer;
+      transition: all .5s ease;
+
+      &:hover {
+        background: $hoverYellow;
+      }
+
+      &.activeTag:hover {
+        background: $yellow;
+      }
+
+      @media (max-width: $tablet) {
+        padding: 4px 25px;
+      }
+    }
+  }
+}
+
+.activeTag {
+  background: $hoverYellow;
+}

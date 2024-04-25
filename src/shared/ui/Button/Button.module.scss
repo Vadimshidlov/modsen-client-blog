@@ -6,7 +6,7 @@
   font-size: $fz18;
   font-weight: $bold;
   line-height: 24px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 
   &:hover {
@@ -22,4 +22,9 @@
     padding: 8px 24px;
     font-size: $fz14;
   }
+}
+
+.borderedButton {
+  border-radius: 6px;
+  padding: 16px;
 }

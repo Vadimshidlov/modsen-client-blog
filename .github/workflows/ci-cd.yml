@@ -1,35 +1,30 @@
-name: Node.js CI
+name: CI
 
 on:
   push:
-    branches: [develop]
-  pull_request:
     branches: [develop]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.15.x]
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: 'Check out git repository'
+        uses: actions/checkout@v4
+
+      - name: Use Node.js v18+
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
+          node-version: 18.x
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - name: 'Install dependencies'
+        run: npm install
 
-      - name: Check linting
-        run: yarn lint
+      - name: 'Linting'
+        run: npm run lint
 
-      - name: Run the tests
-        run: yarn test
+      - name: 'Test'
+        run: npm run test
 
-      - name: Build
-        run: yarn build
+      - name: 'Build'
+        run: npm run build

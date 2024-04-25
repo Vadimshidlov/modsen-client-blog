@@ -26,7 +26,7 @@ export function PostItem({ id, title, text, category, img }: PostItemPropsType) 
       </div>
       <div className={styles.postContentBlock}>
         <h4 className={`${styles.postSubTitle} ${inter.variable}`}>{category.toUpperCase()}</h4>
-        <Link href={`posts/${id}`}>
+        <Link href={`/posts/${id}`}>
           <h2 className={styles.postTitle}>{title}</h2>
         </Link>
         <span className={styles.postText}>{text}</span>
