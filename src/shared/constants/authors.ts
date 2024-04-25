@@ -1,4 +1,3 @@
-// import authorImgSrc1 from '@/shared/assets/authors/Floyd-Miles.jpg';
 import authorImgSrc1 from '@/shared/assets/authors/Floyd-Miles.png';
 import authorImgSrc2 from '@/shared/assets/authors/Dianne Russell.png';
 import authorImgSrc3 from '@/shared/assets/authors/Jenny Wilson.png';

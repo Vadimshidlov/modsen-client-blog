@@ -19,6 +19,7 @@ export const POSTS = [
     category: 'Technology',
     categoryIcon: technologyCategoryIcon,
     author: 'Floyd Miles',
+    tags: ['Business', 'Technology', 'Marketing'],
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ export const POSTS = [
     category: 'Startup',
     categoryIcon: startupCategoryIcon,
     author: 'Dianne Russell',
+    tags: ['Business', 'Technology', 'Marketing'],
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ export const POSTS = [
     category: 'Business',
     categoryIcon: businessCategoryIcon,
     author: 'Jenny Wilson',
+    tags: ['Experience', 'Screen', 'Technology', 'Marketing'],
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ export const POSTS = [
     category: 'Startup',
     categoryIcon: startupCategoryIcon,
     author: 'Leslie Alexander',
+    tags: ['Experience', 'Screen', 'Technology', 'Marketing'],
   },
   {
     id: 5,
@@ -59,6 +63,7 @@ export const POSTS = [
     category: 'Technology',
     categoryIcon: technologyCategoryIcon,
     author: 'Guy Hawkins',
+    tags: ['Technology'],
   },
   {
     id: 6,
@@ -69,35 +74,40 @@ export const POSTS = [
     category: 'Economy',
     categoryIcon: economyCategoryIcon,
     author: 'Eleanor Pena',
+    tags: ['Technology'],
   },
   {
     id: 7,
     img: postImage2,
-    title: 'A UX Case Study Creating a Studious Environment for Students: ',
+    title: 'TikTok pulls feature from Lite app in EU over addiction concerns: ',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
     postDate: 'Jun 25, 2024',
     category: 'Technology',
     categoryIcon: technologyCategoryIcon,
     author: 'Robert Fox',
+    tags: ['Marketing', 'Life'],
   },
   {
     id: 8,
     img: postImage3,
-    title: 'A UX Case Study Creating a Studious Environment for Students: ',
+    title:
+      'Eric Schmidt-backed Augment, a GitHub Copilot rival, launches out of stealth with $252M: ',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
     postDate: 'Jun 25, 2024',
     category: 'Technology',
     categoryIcon: technologyCategoryIcon,
     author: 'Jacob Jones',
+    tags: ['Marketing', 'Life'],
   },
   {
     id: 9,
     img: postImage4,
-    title: 'A UX Case Study Creating a Studious Environment for Students: ',
+    title: 'Rabbit’s R1 is a little AI gadget that grows on you: ',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
     postDate: 'July 20, 2024',
     category: 'Technology',
     categoryIcon: technologyCategoryIcon,
     author: 'Robert Fox',
+    tags: ['Life'],
   },
 ];

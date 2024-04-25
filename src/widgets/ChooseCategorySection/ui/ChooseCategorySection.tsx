@@ -3,6 +3,7 @@ import styles from '@/widgets/ChooseCategorySection/ui/ChooseCategorySection.mod
 import { CATEGORIES } from '@/shared/constants/categories';
 import { Category } from '@/widgets/ChooseCategorySection/ui/Category';
 import container from '@/shared/styles/container.module.scss';
+import Link from 'next/link';
 
 export function ChooseCategorySection() {
   return (
@@ -10,7 +11,9 @@ export function ChooseCategorySection() {
       <h3 className={styles.sectionTitle}>Choose A Category</h3>
       <ul className={styles.categoriesContainer}>
         {CATEGORIES.map(({ img, title, text }) => (
-          <Category key={title} img={img} text={text} title={title} />
+          <Link href={`category/${title.toLowerCase()}`}>
+            <Category key={title} img={img} text={text} title={title} />
+          </Link>
         ))}
       </ul>
     </section>

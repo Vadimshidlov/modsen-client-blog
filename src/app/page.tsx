@@ -1,5 +1,4 @@
 import { StartUpSection } from '@/widgets/StartUpSection/ui/StartUpSection';
-// import { Sen } from 'next/font/google';
 import { PostsSection } from '@/widgets/PostsSection/ui/PostsSection';
 import { HomeAboutUs } from '@/widgets/HomeAboutUs';
 import { ChooseCategorySection } from '@/widgets/ChooseCategorySection';

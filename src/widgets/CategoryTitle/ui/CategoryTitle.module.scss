@@ -1,0 +1,46 @@
+.categoryTitleContainer {
+  // padding-top: 80px;
+  // padding-bottom: 80px;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $lightPurple;
+  // justify-content: center;
+
+  @media (max-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .categoryTitle {
+    margin-bottom: 16px;
+    @include display;
+
+    @media (max-width: $tablet) {
+      @include headingTwo;
+    }
+
+    @media (max-width: $mobile) {
+      @include headingThree;
+    }
+  }
+
+  .categoryDescription {
+    margin-bottom: 32px;
+    @include bodyOne;
+    max-width: 515px;
+    text-align: center;
+  }
+
+  .categoryPath {
+    font-size: $fz16;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+  }
+}

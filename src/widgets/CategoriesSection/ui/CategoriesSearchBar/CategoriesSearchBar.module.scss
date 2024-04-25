@@ -1,0 +1,76 @@
+.searchBarContainer {
+  position: relative;
+  margin-bottom: 58px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 15px;
+  }
+
+  .searchInput {
+    padding: 15px 84px 15px 25px;
+    font-weight: $bold;
+    font-size: $fz14;
+    line-height: 24px;
+    border: 1px solid $inputBorder;
+    border-radius: 6px;
+    outline: none;
+    color: $black;
+
+    &::placeholder {
+      font-weight: $bold;
+      font-size: $fz14;
+      line-height: 24px;
+      color: $black;
+    }
+  }
+
+  .searchBarForm {
+    position: relative;
+
+    @media (max-width: 1250px) {
+      max-width: 300px;
+    }
+
+    .searchButtonWrapper {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .filteredPosts {
+    padding-top: 5px;
+    max-width: 300px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background: $white;
+
+    .filteredPost {
+      padding: 10px;
+      border: 1px solid $grey;
+      cursor: pointer;
+      transition: all .5s ease;
+
+      &:hover {
+        background: $hoverYellow;
+      }
+
+      .filteredPostTitle {
+        @include headingSix;
+      }
+      .filteredPostTags {
+        @include headingSeven;
+      }
+    }
+
+    .filteredPostsNotFound {
+      width: 100%;
+      @include headingSix;
+      padding: 10px;
+      border: 1px solid $grey;
+      transition: all .5s ease;
+    }
+  }
+}
