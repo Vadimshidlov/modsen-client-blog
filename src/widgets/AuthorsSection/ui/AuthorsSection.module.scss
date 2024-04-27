@@ -1,6 +1,4 @@
 .authorsSection {
-  //display: flex;
-  //flex-direction: column;
   margin-bottom: 96px;
 
   @media (max-width: 768px) {
@@ -32,6 +30,10 @@
       justify-content: center;
       gap: 32px;
       flex-wrap: wrap;
+
+      @media (max-width: $mobile) {
+        row-gap: 16px;
+      }
     }
   }
 }

@@ -6,6 +6,7 @@
   }
 
   .contentContainer {
+    position: relative;
     padding: 75px 80px 112px;
     display: flex;
     justify-content: center;
@@ -23,6 +24,7 @@
     }
 
     .infoBlock {
+      width: 100%;
       display: flex;
       flex-direction: column;
 
@@ -64,58 +66,80 @@
       }
     }
 
-    .messagesBlock {
-      position: relative;
+    .swiperWrapper {
+      width: 100%;
+      overflow: hidden;
       display: flex;
-      flex-direction: column;
 
-      .messagesText {
-        @include headingFour;
-        max-width: 469px;
-        margin-bottom: 121px;
+      .swiperItem {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
 
-        @media (max-width: 900px) {
-          margin-bottom: 50px;
-        }
-
-        @media (max-width: 768px) {
-          @include headingFive;
-          margin-bottom: 30px;
-        }
-
-        @media (max-width: 450px) {
-          @include headingSix;
+        @media (max-width: $tablet) {
+          padding-bottom: 20px;
         }
       }
 
-      .authorInfoBlock {
+      .messagesBlock {
         display: flex;
-        column-gap: 16px;
-        align-items: center;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
 
-        .authorInfoAvatar {
-          width: 48px;
-          height: 48px;
-        }
-
-        .authorInfoText {
+        .swiperItem {
           display: flex;
           flex-direction: column;
+        }
 
-          .authorInfoName {
-            @include headingFour;
+        .messagesText {
+          @include headingFour;
+          max-width: 469px;
+          margin-bottom: 121px;
 
-            @media (max-width: 768px) {
-              @include headingFive;
-            }
-
-            @media (max-width: 768px) {
-              @include headingSix;
-            }
+          @media (max-width: 900px) {
+            margin-bottom: 50px;
           }
 
-          .authorInfoAddress {
-            @include bodyOne;
+          @media (max-width: 768px) {
+            @include headingFive;
+            margin-bottom: 30px;
+          }
+
+          @media (max-width: 450px) {
+            @include headingSix;
+          }
+        }
+
+        .authorInfoBlock {
+          display: flex;
+          column-gap: 16px;
+          align-items: center;
+
+          .authorInfoAvatar {
+            width: 48px;
+            height: 48px;
+          }
+
+          .authorInfoText {
+            display: flex;
+            flex-direction: column;
+
+            .authorInfoName {
+              @include headingFour;
+
+              @media (max-width: 768px) {
+                @include headingFive;
+              }
+
+              @media (max-width: 768px) {
+                @include headingSix;
+              }
+            }
+
+            .authorInfoAddress {
+              @include bodyOne;
+            }
           }
         }
       }
@@ -123,17 +147,18 @@
 
     .sliderController {
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: 120px;
+      right: 67px;
       display: flex;
       column-gap: 24px;
 
-      @media (max-width: 1200px) {
-        bottom: -70px;
+      @media (max-width: 1300px) {
+        bottom: 31px;
+        transform: translateX(-50%);
       }
 
       @media (max-width: 768px) {
-        bottom: -40px;
+        bottom: 13px;
       }
 
       .sliderButton {
@@ -145,7 +170,7 @@
         border-radius: 50%;
         background: $white;
         cursor: pointer;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
 
         &:hover {
           background: $darkFiolet;
@@ -157,8 +182,8 @@
         }
 
         @media (max-width: 768px) {
-          width: 34px;
-          height: 34px;
+          width: 40px;
+          height: 40px;
         }
       }
     }

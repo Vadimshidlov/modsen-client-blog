@@ -1,0 +1,84 @@
+.privacySectionContainer {
+  .privacyTitleContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: $lightPurple;
+
+    @media (max-width: $tablet) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .privacyTitle {
+      @include headingOne;
+      text-align: center;
+      margin-bottom: 4px;
+
+      @media (max-width: $tablet) {
+        @include headingThree;
+      }
+    }
+
+    .privacyText {
+      font-size: $fz16;
+      line-height: 28px;
+      text-align: center;
+      color: $darkFiolet;
+    }
+  }
+
+  .privacyDescriptionContainer {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 96px 20px;
+
+    @media (max-width: $tablet) {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    @media (max-width: $mobile) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    .descriptionTitle {
+      margin-bottom: 32px;
+      @include headingOne;
+
+      @media (max-width: $tablet) {
+        margin-bottom: 16px;
+        @include headingThree;
+      }
+
+      @media (max-width: $mobile) {
+        @include headingFive;
+      }
+    }
+
+    .descriptionSubTitle {
+      margin-bottom: 24px;
+      @include headingTwo;
+
+      @media (max-width: $tablet) {
+        margin-bottom: 12px;
+        @include headingFour;
+      }
+
+      @media (max-width: $mobile) {
+        @include headingSix;
+      }
+    }
+
+    .descriptionText {
+      display: block;
+      margin-bottom: 32px;
+      @include bodyOne;
+    }
+  }
+
+  .videoContainer {
+  }
+}

@@ -8,6 +8,7 @@ import { POSTS } from '@/shared/constants/posts';
 import { PostItem } from '@/widgets/PostItem';
 import { Categories } from '@/widgets/CategoriesSection/ui/Categories';
 import { SearchTags } from '@/widgets/CategoriesSection/ui/SearchTags';
+import { useScrollPosition } from '@/shared/utils/hooks/useScrollPosition';
 
 export type CategoriesSectionPropsType = {
   selectedCategory: string;
@@ -15,6 +16,8 @@ export type CategoriesSectionPropsType = {
 
 export function CategoriesSection({ selectedCategory }: CategoriesSectionPropsType) {
   const [selectTags, setSelectTags] = useState<string[]>([]);
+
+  useScrollPosition(selectTags);
 
   const filteredPosts = POSTS.filter(
     (postData) =>
@@ -26,7 +29,7 @@ export function CategoriesSection({ selectedCategory }: CategoriesSectionPropsTy
     <section className={`${styles.categoriesSection} ${container.container}`}>
       <div className={styles.postsContainer}>
         {filteredPosts.length === 0 && (
-          <span className={styles.postsNotFountTitle}>There are not posts with selected tags</span>
+          <span className={styles.postsNotFountTitle}>There are no posts with selected tags</span>
         )}
         {filteredPosts.length !== 0 &&
           filteredPosts.map(({ id, img, category, title, text }) => (

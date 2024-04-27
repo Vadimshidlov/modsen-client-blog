@@ -1,25 +1,29 @@
-import { StartUpSection } from '@/widgets/StartUpSection/ui/StartUpSection';
-import { PostsSection } from '@/widgets/PostsSection/ui/PostsSection';
-import { HomeAboutUs } from '@/widgets/HomeAboutUs';
-import { ChooseCategorySection } from '@/widgets/ChooseCategorySection';
-import { SpecialPostSection } from '@/widgets/SpecialPostSection';
-import { AuthorsSection } from '@/widgets/AuthorsSection';
-import { LogosSection } from '@/widgets/LogosSection';
-import { TestimonialsSection } from '@/widgets/TestimonialsSection';
-import { JoinTeamSection } from '@/widgets/JoinTeamSection';
+'use client';
+
+import { useCallback, useState } from 'react';
+import { ScrollMarker } from '@/widgets/ScrollMarker/ui/ScrollMarker';
+import { HOME_PAGE_COMPONENTS } from '@/shared/constants/homePageComponents';
 
 export default function Home() {
+  const [visibleComponents, setVisibleComponents] = useState([...HOME_PAGE_COMPONENTS.slice(0, 2)]);
+
+  const handleLoadMore = useCallback(() => {
+    setVisibleComponents((prevComponents) => {
+      const listLength = prevComponents.length;
+      const newData = HOME_PAGE_COMPONENTS.slice(listLength, listLength + 1);
+
+      return [...prevComponents, ...newData];
+    });
+  }, []);
+
+  const isStopLoading = visibleComponents.length === HOME_PAGE_COMPONENTS.length;
+
   return (
     <main>
-      <StartUpSection />
-      <PostsSection />
-      <HomeAboutUs />
-      <ChooseCategorySection />
-      <SpecialPostSection />
-      <AuthorsSection isShortVerison />
-      <LogosSection />
-      <TestimonialsSection />
-      <JoinTeamSection />
+      {visibleComponents.map(({ id, element: Component }) => (
+        <Component key={id} />
+      ))}
+      <ScrollMarker loadMore={handleLoadMore} isStopLoading={isStopLoading} />
     </main>
   );
 }

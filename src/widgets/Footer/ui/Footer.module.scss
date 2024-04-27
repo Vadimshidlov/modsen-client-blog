@@ -4,8 +4,12 @@
   background: $darkFiolet;
   padding: 52px 80px 56px 80px;
 
-  @media (max-width: 768px) {
+  @media (max-width: $tablet) {
     padding: 26px 40px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 26px 20px;
   }
 
   .footer__titleContainer {
@@ -40,7 +44,7 @@
         font-weight: $regular;
         line-height: 28px;
         color: $white;
-        opacity: .7;
+        opacity: 0.7;
 
         @media (max-width: 650px) {
           font-size: $fz14;
