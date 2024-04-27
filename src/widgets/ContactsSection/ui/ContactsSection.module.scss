@@ -1,0 +1,101 @@
+.contactsSection {
+  padding-top: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $tablet) {
+    padding-top: 64px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 32px;
+  }
+
+  .contactsTitleBlockContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 768px;
+    margin-bottom: 64px;
+
+
+    .contactsSubTitle {
+      margin-bottom: 12px;
+      font-size: $fz16;
+      font-weight: $extraBold;
+      letter-spacing: 3px;
+      text-align: center;
+      line-height: 20px;
+    }
+
+    .contactsTitle {
+      margin-bottom: 24px;
+      @include headingOne;
+
+      @media (max-width: $tablet) {
+        @include headingThree;
+      }
+
+      @media (max-width: $mobile) {
+        @include headingFive;
+      }
+    }
+
+    .contactsText {
+      text-align: center;
+    }
+  }
+
+  .contactsSheduleBlockContainer {
+    padding: 48px 64px;
+    margin-bottom: 32px;
+    display: flex;
+    column-gap: 42px;
+    max-width: 768px;
+    width: 100%;
+    background: $lightFiolet;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    .scheduleBlock {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .scheduleSubTitle {
+        width: 100%;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        font-size: $fz14;
+        line-height: 20px;
+        color: $white;
+        opacity: .6;
+        border-bottom: 1px solid $white;
+      }
+
+      .scheduleTitle {
+        @include headingFive;
+        color: $white;
+
+        @media (max-width: $tablet) {
+          @include headingSix;
+        }
+      }
+
+      .scheduleText {
+        font-size: $fz16;
+        line-height: 20px;
+        color: $white;
+        opacity: .6;
+      }
+    }
+
+
+    .scheduleContactsBlock {
+    }
+  }
+}

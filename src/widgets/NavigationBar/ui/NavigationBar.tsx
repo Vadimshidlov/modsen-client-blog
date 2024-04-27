@@ -15,7 +15,7 @@ export function NavigationBar({ navigationLinks }: NavigationBarPropsType) {
   return (
     <ul className={styles.navigation}>
       {navigationLinks.map(({ text, link }) => (
-        <li className={styles.navigation__item}>
+        <li className={styles.navigation__item} key={text}>
           <Link key={text} href={link}>
             {text}
           </Link>

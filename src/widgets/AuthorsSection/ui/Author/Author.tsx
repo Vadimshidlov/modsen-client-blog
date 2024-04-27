@@ -7,15 +7,18 @@ import { SOCIALS } from '@/shared/constants/socials';
 export type AuthorPropsType = {
   avatarSrc: string | StaticImageData;
   name: string;
+  id: number;
   job: string;
   company: string;
 };
 
-export function Author({ avatarSrc, name, job, company }: AuthorPropsType) {
+export function Author({ id, avatarSrc, name, job, company }: AuthorPropsType) {
   return (
     <li className={styles.authorsItem}>
       <Image className={styles.authorsAvatar} alt="Mountains" src={avatarSrc} />
-      <span className={styles.authorName}>{name}</span>
+      <Link href={`/authors/${id}`}>
+        <span className={styles.authorName}>{name}</span>
+      </Link>
       <span className={styles.authorJobInfo}>
         {job} @{company}
       </span>

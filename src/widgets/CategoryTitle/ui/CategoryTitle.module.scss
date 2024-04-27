@@ -1,12 +1,9 @@
 .categoryTitleContainer {
-  // padding-top: 80px;
-  // padding-bottom: 80px;
   padding: 80px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: $lightPurple;
-  // justify-content: center;
 
   @media (max-width: $tablet) {
     padding-top: 80px;

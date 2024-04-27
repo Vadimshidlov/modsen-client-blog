@@ -32,6 +32,10 @@
       justify-content: center;
       gap: 32px;
       flex-wrap: wrap;
+
+      @media (max-width: $mobile) {
+        row-gap: 16px;
+      }
     }
   }
 }

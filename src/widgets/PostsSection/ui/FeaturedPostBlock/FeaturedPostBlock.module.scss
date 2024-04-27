@@ -12,6 +12,10 @@
     padding: 32px;
     border: 1px solid $grey;
 
+    @media (max-width: $mobile) {
+      padding: 16px;
+    }
+
     .post__image {
       width: 100%;
       height: auto;

@@ -26,7 +26,7 @@ export function CategoriesSection({ selectedCategory }: CategoriesSectionPropsTy
     <section className={`${styles.categoriesSection} ${container.container}`}>
       <div className={styles.postsContainer}>
         {filteredPosts.length === 0 && (
-          <span className={styles.postsNotFountTitle}>There are not posts with selected tags</span>
+          <span className={styles.postsNotFountTitle}>There are no posts with selected tags</span>
         )}
         {filteredPosts.length !== 0 &&
           filteredPosts.map(({ id, img, category, title, text }) => (
