@@ -4,6 +4,7 @@ import styles from '@/widgets/StartUpSection/ui/StartUpSection.module.scss';
 import startupBackground from '@/widgets/StartUpSection/assets/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.jpg';
 import { Button } from '@/shared/ui/Button/Button';
 import { POSTS } from '@/shared/constants/posts';
+import Link from 'next/link';
 
 export function StartUpSection() {
   const featuredPost = POSTS.filter((postData) => postData.id === 1)[0];
@@ -34,7 +35,10 @@ export function StartUpSection() {
             <span>{author}</span> |{postDate}
           </span>
           <span className={styles.text}>{text}</span>
-          <Button>Read More &gt;</Button>
+          {/* <Button>Read More &gt;</Button> */}
+          <Link href="/posts/1">
+            <Button>Read More &gt;</Button>
+          </Link>
         </div>
       </div>
     </section>

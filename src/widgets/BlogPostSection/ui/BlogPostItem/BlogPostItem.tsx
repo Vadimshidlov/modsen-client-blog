@@ -9,13 +9,19 @@ export function BlogPostItem({ postId }: { postId: number }) {
   const selectedPostData = POSTS.filter((postData) => postData.id === postId)[0];
   const { postDate, author, categoryIcon, title, category, img: postImage } = selectedPostData;
   const postAuthorData = AUTHORS_LIST.filter((authorData) => authorData.name === author)[0];
-  const { img: authorAvatar } = postAuthorData;
+  const { img: authorAvatar, id: authorId } = postAuthorData;
 
   return (
     <section className={styles.blogPostContainer}>
       <div className={styles.postPreviewBlock}>
-        <AuthorTitleCard src={authorAvatar} title={author} subtitle={`Posted on ${postDate}`} />
+        <AuthorTitleCard
+          authorId={authorId}
+          src={authorAvatar}
+          title={author}
+          subtitle={`Posted on ${postDate}`}
+        />
         <h1 className={styles.postPreviewTitle}>{title}</h1>
+
         <div className={styles.postCategoryInfo}>
           <Image className={styles.postCategoryImage} src={categoryIcon} alt="category-pic" />
           <span className={styles.postCategoryName}>{category}</span>

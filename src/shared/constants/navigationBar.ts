@@ -13,7 +13,7 @@ export const NAVIGATION_LINKS_SHORT = [
   },
   {
     text: 'Contact us',
-    link: '/',
+    link: '/contacts',
   },
 ];
 
@@ -36,6 +36,6 @@ export const NAVIGATION_LINKS = [
   },
   {
     text: 'Privacy Policy',
-    link: '/',
+    link: '/privacy',
   },
 ];
