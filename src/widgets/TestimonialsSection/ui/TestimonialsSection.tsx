@@ -31,7 +31,12 @@ export function TestimonialsSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
           </h3>
-          <AuthorTitleCard title="Jonathan Vallem" subtitle="New york, USA" src={authorImgSrc1} />
+          <AuthorTitleCard
+            authorId={5}
+            title="Jonathan Vallem"
+            subtitle="New york, USA"
+            src={authorImgSrc1}
+          />
           <div className={styles.sliderController}>
             <div className={styles.sliderButton}>
               <Image
