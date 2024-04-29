@@ -5,10 +5,10 @@ import { Author } from '@/widgets/AuthorsSection/ui/Author';
 import container from '@/shared/styles/container.module.scss';
 
 export type AuthorsSectionPropsType = {
-  isShortVerison: boolean;
+  isShortVerison?: boolean;
 };
 
-export function AuthorsSection({ isShortVerison }: AuthorsSectionPropsType) {
+export function AuthorsSection({ isShortVerison = true }: AuthorsSectionPropsType) {
   const authorsList = isShortVerison ? AUTHORS_LIST.slice(0, 4) : AUTHORS_LIST;
 
   return (

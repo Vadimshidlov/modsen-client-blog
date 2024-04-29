@@ -13,9 +13,9 @@ export function AllPostsBlock() {
           <span>View All</span>
         </Link>
       </div>
-      {POSTS.map(({ id, postDate, author, title }) => (
-        <Link className={styles.section__link} href={`/posts/${id}`}>
-          <PostItem key={id} postDate={postDate} postText={title} authorName={author} />
+      {POSTS.slice(0, 4).map(({ id, postDate, author, title }) => (
+        <Link key={id} className={styles.section__link} href={`/posts/${id}`}>
+          <PostItem postDate={postDate} postText={title} authorName={author} />
         </Link>
       ))}
     </section>

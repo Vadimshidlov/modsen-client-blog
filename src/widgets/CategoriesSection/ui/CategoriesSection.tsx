@@ -8,6 +8,7 @@ import { POSTS } from '@/shared/constants/posts';
 import { PostItem } from '@/widgets/PostItem';
 import { Categories } from '@/widgets/CategoriesSection/ui/Categories';
 import { SearchTags } from '@/widgets/CategoriesSection/ui/SearchTags';
+import { useScrollPosition } from '@/shared/utils/hooks/useScrollPosition';
 
 export type CategoriesSectionPropsType = {
   selectedCategory: string;
@@ -15,6 +16,8 @@ export type CategoriesSectionPropsType = {
 
 export function CategoriesSection({ selectedCategory }: CategoriesSectionPropsType) {
   const [selectTags, setSelectTags] = useState<string[]>([]);
+
+  useScrollPosition(selectTags);
 
   const filteredPosts = POSTS.filter(
     (postData) =>

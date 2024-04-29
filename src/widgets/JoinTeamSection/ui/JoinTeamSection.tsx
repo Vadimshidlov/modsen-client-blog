@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '@/widgets/JoinTeamSection/ui/JoinTeamSection.module.scss';
 import { Button } from '@/shared/ui/Button';
+import Link from 'next/link';
 
 export function JoinTeamSection() {
   return (
@@ -9,7 +10,9 @@ export function JoinTeamSection() {
       <span className={styles.sectionText}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
       </span>
-      <Button>Join Now</Button>
+      <Button>
+        <Link href="/contacts">Join Now</Link>
+      </Button>
     </section>
   );
 }

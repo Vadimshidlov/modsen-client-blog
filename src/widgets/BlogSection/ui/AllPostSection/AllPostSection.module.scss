@@ -46,11 +46,15 @@
       background: transparent;
       @include headingFour;
       color: $grey;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
 
-      &:hover {
+      &:hover:not(:disabled) {
         transform: scale(1.1);
         color: $darkFiolet;
+      }
+
+      &:disabled {
+        opacity: 0.5;
       }
     }
   }

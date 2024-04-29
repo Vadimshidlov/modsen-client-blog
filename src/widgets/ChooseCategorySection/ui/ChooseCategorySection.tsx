@@ -11,8 +11,8 @@ export function ChooseCategorySection() {
       <h3 className={styles.sectionTitle}>Choose A Category</h3>
       <ul className={styles.categoriesContainer}>
         {CATEGORIES.map(({ img, title, text }) => (
-          <Link href={`category/${title.toLowerCase()}`}>
-            <Category key={title} img={img} text={text} title={title} />
+          <Link key={title} href={`category/${title.toLowerCase()}`}>
+            <Category img={img} text={text} title={title} />
           </Link>
         ))}
       </ul>

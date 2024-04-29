@@ -1,4 +1,3 @@
-// const MAPBOXGL_STYLES_LINK = 'mapbox://styles/mapbox/streets-v12';
 export const MAPBOXGL_STYLES_LINK = 'mapbox://styles/mapbox/light-v11';
 export const initialUserLng: number = 30.1956;
 export const initialUserLat: number = 55.1926;
