@@ -18,7 +18,6 @@ export function ScrollMarker({
         const isSentinelIntersecting = entries[0].isIntersecting;
 
         if (isSentinelIntersecting && !isStopLoading) {
-          console.log('observer call');
           loadMore();
         }
       },

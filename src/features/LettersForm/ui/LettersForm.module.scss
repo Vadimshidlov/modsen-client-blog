@@ -41,29 +41,47 @@
     }
   }
 
-  .form__input {
-    //height: 56px;
-    height: fit-content;
-    width: fit-content;
-    padding: 18px 25px;
-    background: transparent;
-    border: 1px solid $lightGrey;
-    outline: none;
-    font-size: $fz16;
-    color: $grey;
+  .formButtonWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
 
-    @media (max-width: $tablet) {
-      padding: 15px 10px;
-      font-size: $fz14;
-    }
-
+  .formLabel {
     @media (max-width: 600px) {
       width: 100%;
     }
 
-    @media (max-width: $mobile) {
-      padding: 10px 5px;
-      font-size: $fz12;
+    .formInput {
+      height: fit-content;
+      width: fit-content;
+      padding: 18px 25px;
+      background: transparent;
+      border: 1px solid $lightGrey;
+      outline: none;
+      font-size: $fz16;
+      color: $grey;
+
+      @media (max-width: $tablet) {
+        padding: 15px 10px;
+        font-size: $fz14;
+      }
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+
+      @media (max-width: $mobile) {
+        padding: 10px 5px;
+        font-size: $fz12;
+      }
+    }
+
+    .validationError {
+      font-size: $fz14;
+      color: $red;
+      padding-top: 5px;
+      text-align: center;
     }
   }
 
@@ -81,5 +99,8 @@
         width: 100%;
       }
     }
+  }
+
+  .validationError {
   }
 }

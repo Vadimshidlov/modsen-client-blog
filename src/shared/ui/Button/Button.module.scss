@@ -1,3 +1,15 @@
+@keyframes submitting {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .button {
   width: fit-content;
   height: fit-content;
@@ -9,7 +21,8 @@
   transition: all 0.5s ease;
   cursor: pointer;
 
-  &:hover {
+  &:hover:not(:disabled) {
+    transform: scale(1.04);
     background: $hoverYellow;
   }
 
@@ -21,6 +34,15 @@
   @media (max-width: 450px) {
     padding: 8px 24px;
     font-size: $fz14;
+  }
+
+  &:disabled {
+    cursor: auto;
+    opacity: 0.8;
+  }
+
+  &.isSubmitting {
+    animation: submitting 0.5s ease infinite;
   }
 }
 

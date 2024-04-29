@@ -3,6 +3,8 @@ import { Sen } from 'next/font/google';
 import '@/app/globals.scss';
 import { Header } from '@/widgets/Header/ui/Header';
 import { Footer } from '@/widgets/Footer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const sen = Sen({
   subsets: ['latin'],
@@ -26,6 +28,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ToastContainer />
       </body>
     </html>
   );
