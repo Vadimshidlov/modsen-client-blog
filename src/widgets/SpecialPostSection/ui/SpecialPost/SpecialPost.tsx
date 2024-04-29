@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '@/widgets/SpecialPostSection/ui/SpecialPost/SpecialPost.module.scss';
 import { Inter } from 'next/font/google';
 import { Button } from '@/shared/ui/Button';
+import Link from 'next/link';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,7 +22,9 @@ export function SpecialPost() {
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip.
       </span>
-      <Button>Discover our story &gt;</Button>
+      <Button>
+        <Link href="/about">Discover our story &gt;</Link>
+      </Button>
     </article>
   );
 }

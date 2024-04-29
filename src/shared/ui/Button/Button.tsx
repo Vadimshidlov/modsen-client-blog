@@ -4,10 +4,18 @@ import styles from '@/shared/ui/Button/Button.module.scss';
 export type ButtonPropsType = {
   children: ReactNode;
   isPrimary?: boolean;
+  disabled?: boolean;
   isFormButton?: boolean;
+  isSubmitting?: boolean;
 } & React.ComponentPropsWithRef<'button'>;
 
-export function Button({ children, isFormButton = false, isPrimary = true }: ButtonPropsType) {
+export function Button({
+  children,
+  disabled = false,
+  isSubmitting = false,
+  isFormButton = false,
+  isPrimary = true,
+}: ButtonPropsType) {
   let buttonClasses = styles.button;
 
   if (isFormButton) {
@@ -16,5 +24,13 @@ export function Button({ children, isFormButton = false, isPrimary = true }: But
     buttonClasses += ` ${styles.borderedButton}`;
   }
 
-  return <button className={buttonClasses}>{children}</button>;
+  if (isSubmitting) {
+    buttonClasses += ` ${styles.isSubmitting}`;
+  }
+
+  return (
+    <button disabled={disabled} type={isFormButton ? 'submit' : 'button'} className={buttonClasses}>
+      {children}
+    </button>
+  );
 }

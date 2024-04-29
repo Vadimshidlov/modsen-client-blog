@@ -105,4 +105,11 @@
       }
     }
   }
+
+  .validationError {
+    font-size: $fz14;
+    color: $red;
+    padding-top: 5px;
+    text-align: center;
+  }
 }
