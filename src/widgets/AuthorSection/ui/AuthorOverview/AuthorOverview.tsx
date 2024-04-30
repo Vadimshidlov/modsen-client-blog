@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import styles from '@/widgets/AuthorSection/ui/AuthorOverview/AuthorOverview.module.scss';
 import { SOCIALS } from '@/shared/constants/socials';
+import { useTranslations } from 'next-intl';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,14 +18,14 @@ export type AuthorOverviewPropsType = {
 };
 
 export function AuthorOverview({ name, img }: AuthorOverviewPropsType) {
+  const t = useTranslations('AuthorOverview');
+
   return (
     <article className={styles.authorOverviewContainer}>
       <div className={styles.authorOverviewContent}>
         <Image className={styles.authorOverviewImage} src={img} alt="author-avatar-icon" />
         <div className={styles.authorOverviewDescription}>
-          <h1 className={styles.authorOverviewTitle}>
-            Hey there, I’m {name} and welcome to my Blog
-          </h1>
+          <h1 className={styles.authorOverviewTitle}>{t('title', { name })}</h1>
           <span className={`${styles.authorOverviewText} ${inter.variable}`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque

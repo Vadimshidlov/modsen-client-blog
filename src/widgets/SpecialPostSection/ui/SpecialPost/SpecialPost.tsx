@@ -3,6 +3,7 @@ import styles from '@/widgets/SpecialPostSection/ui/SpecialPost/SpecialPost.modu
 import { Inter } from 'next/font/google';
 import { Button } from '@/shared/ui/Button';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,19 +12,19 @@ const inter = Inter({
 });
 
 export function SpecialPost() {
+  const t = useTranslations('SpecialPost');
+
   return (
     <article className={styles.contentBlock}>
-      <h3 className={`${styles.postSubTitle} ${inter.variable}`}>WHY WE STARTED</h3>
-      <h2 className={styles.postTitle}>
-        It started out as a simple idea and evolved into our passion
-      </h2>
+      <h3 className={`${styles.postSubTitle} ${inter.variable}`}>{t('title')}</h3>
+      <h2 className={styles.postTitle}>{t('postTitle')}</h2>
       <span className={styles.postText}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip.
       </span>
       <Button>
-        <Link href="/about">Discover our story &gt;</Link>
+        <Link href="/about">{t('buttonText')} &gt;</Link>
       </Button>
     </article>
   );

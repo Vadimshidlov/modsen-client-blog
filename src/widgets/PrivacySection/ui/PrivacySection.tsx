@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '@/widgets/PrivacySection/ui/PrivacySection.module.scss';
 import { Inter } from 'next/font/google';
+import { useTranslations } from 'next-intl';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -9,13 +10,13 @@ const inter = Inter({
 });
 
 export function PrivacySection() {
+  const t = useTranslations('PrivacySection');
+
   return (
     <section className={styles.privacySectionContainer}>
       <div className={styles.privacyTitleContainer}>
-        <h1 className={styles.privacyTitle}>Privacy Policy</h1>
-        <span className={`${styles.privacyText} ${inter.variable}`}>
-          Last Updated on 27th January 2022
-        </span>
+        <h1 className={styles.privacyTitle}>{t('title')}</h1>
+        <span className={`${styles.privacyText} ${inter.variable}`}>{t('subTitle')}</span>
       </div>
       <article className={styles.privacyDescriptionContainer}>
         <h2 className={styles.descriptionTitle}>Lorem ipsum dolor sit amet</h2>

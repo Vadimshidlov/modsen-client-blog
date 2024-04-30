@@ -1,16 +1,24 @@
 import type { Metadata } from 'next';
 import { Sen } from 'next/font/google';
-import '@/app/globals.scss';
+import '@/shared/styles/globals.scss';
 import { Header } from '@/widgets/Header/ui/Header';
 import { Footer } from '@/widgets/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 const sen = Sen({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-sen',
 });
+
+export type RootLayoutPropsType = {
+  children: React.ReactNode;
+  params: {
+    locale: string;
+  };
+};
 
 export const metadata: Metadata = {
   title: 'Modsen Client Blog',
@@ -19,16 +27,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  params: { locale },
+}: Readonly<RootLayoutPropsType>) {
+  const messages = useMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={sen.className}>
-        <Header />
-        {children}
-        <Footer />
-        <ToastContainer />
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Header />
+          {children}
+          <Footer />
+          <ToastContainer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

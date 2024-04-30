@@ -5,8 +5,11 @@ import startupBackground from '@/widgets/StartUpSection/assets/man-in-black-suit
 import { Button } from '@/shared/ui/Button/Button';
 import { POSTS } from '@/shared/constants/posts';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export function StartUpSection() {
+  const t = useTranslations('StartUpSection');
+
   const featuredPost = POSTS.filter((postData) => postData.id === 1)[0];
   const { author, postDate, text, title } = featuredPost;
 
@@ -25,8 +28,8 @@ export function StartUpSection() {
       />
       <div className={styles.content__container}>
         <h3 className={styles.subtitle}>
-          POSTED ON&nbsp;
-          <span>STARTUP</span>
+          {t('titleFirstPart')}&nbsp;
+          <span>{t('titleSecondPart')}&nbsp;</span>
         </h3>
         <h1 className={styles.title}>{title}</h1>
         <div className={styles.text__container}>
@@ -37,7 +40,7 @@ export function StartUpSection() {
           <span className={styles.text}>{text}</span>
           {/* <Button>Read More &gt;</Button> */}
           <Link href="/posts/1">
-            <Button>Read More &gt;</Button>
+            <Button>{t('buttonText')} &gt;</Button>
           </Link>
         </div>
       </div>

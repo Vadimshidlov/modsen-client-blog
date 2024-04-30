@@ -3,11 +3,14 @@ import styles from '@/widgets/PostsSection/ui/FeaturedPostBlock/FeaturedPostBloc
 import Image from 'next/image';
 import featuredPost from '@/widgets/PostsSection/assets/white-concrete-building-1838640.jpg';
 import { Button } from '@/shared/ui/Button/Button';
+import { useTranslations } from 'next-intl';
 
 export function FeaturedPostBlock() {
+  const t = useTranslations('FeaturedPostBlock');
+
   return (
     <section className={styles.section__container}>
-      <h3 className={styles.section__title}>Featured Post</h3>
+      <h3 className={styles.section__title}>{t('title')}</h3>
       <div className={styles.post__container}>
         <Image
           className={styles.post__image}
@@ -15,7 +18,7 @@ export function FeaturedPostBlock() {
           src={featuredPost}
           placeholder="blur"
         />
-        <span className={styles.post__authorInfo}>By John Doe l May 23, 2022</span>
+        <span className={styles.post__authorInfo}>{t('authorTag')} John Doe l May 23, 2022</span>
         <h4 className={styles.post__title}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
         </h4>
@@ -23,7 +26,7 @@ export function FeaturedPostBlock() {
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat non proident.
         </span>
-        <Button>Read More &gt;</Button>
+        <Button>{t('buttonText')} &gt;</Button>
       </div>
     </section>
   );

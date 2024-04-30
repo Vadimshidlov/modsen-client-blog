@@ -1,0 +1,135 @@
+{
+  "StartUpSection": {
+    "titleFirstPart": "GEPOSTET AM",
+    "titleSecondPart": "STARTUP",
+    "buttonText": "Mehr lesen"
+  },
+  "NavigationBar": {
+    "Home": "Startseite",
+    "Blog": "Blog",
+    "About Us": "Über uns",
+    "Contact us": "Kontakt",
+    "Privacy Policy": "Datenschutzbestimmungen"
+  },
+  "Header": {
+    "videoButton": "Video über uns"
+  },
+  "AppTitle": {
+    "appTitle": "Modsen Kunden-Blog"
+  },
+  "FeaturedPostBlock": {
+    "title": "Ausgewählter Beitrag",
+    "authorTag": "Unter",
+    "buttonText": "Mehr lesen"
+  },
+  "AllPostsBlock": {
+    "title": "Alle Beiträge",
+    "linkButton": "Ansicht Al"
+  },
+  "HomeAboutUs": {
+    "subTitle": "ÜBER UNS",
+    "title": "Wir sind eine Gemeinschaft von Redakteuren, die ihre Erfahrungen austauschen",
+    "missionSubTitle": "UNSERE MISION",
+    "missionTitle": "Erstellung wertvoller Inhalte für Kreative auf der ganzen Welt",
+    "buttonText": "Mehr lesen"
+  },
+  "ChooseCategorySection": {
+    "title": "Wählen Sie eine Kategorie"
+  },
+  "Category": {
+    "Business": "Business",
+    "Startup": "Startup",
+    "Economy": "Wirtschaft",
+    "Technology": "Technologie"
+  },
+  "SpecialPost": {
+    "title": "WARUM WIR BEGINNEN",
+    "postTitle": "Es begann mit einer einfachen Idee und entwickelte sich zu unserer Leidenschaft",
+    "buttonText": "Entdecken Sie unsere Geschichte"
+  },
+  "AuthorsSection": {
+    "title": "Liste der Autoren"
+  },
+  "LogosSection": {
+    "title": "Wir sind",
+    "subTitle": "Vorgestellt in"
+  },
+  "TestimonialsSection": {
+    "subTitle": "TESTIMONIALS",
+    "title": "Was die Leute über unseren Blog sagen"
+  },
+  "JoinTeamSection": {
+    "title": "Treten Sie unserem Team bei und werden Sie Teil unserer Geschichte",
+    "buttonText": "Jetzt teilnehmen"
+  },
+  "LettersForm": {
+    "title": "Abonnieren Sie unseren Newsletter, um aktuelle Informationen und Neuigkeiten zu erhalten",
+    "buttonText": "Abonnieren",
+    "inputPlaceholder": "Ihre E-Mail eingeben"
+  },
+  "BlogFeaturedPost": {
+    "subTitle": "AUSGEZEICHNETER POST",
+    "authorTag": "Unter",
+    "buttonText": "Mehr lesen"
+  },
+  "AllPostSection": {
+    "title": "Alle Beiträge",
+    "prevButtonText": "Prev",
+    "nextButtonText": "Weiter"
+  },
+  "AboutUsTitle": {
+    "subTitle": "ÜBER UNS",
+    "title": "Wir sind ein Team von Redakteuren, die ihre Erfahrungen mit anderen teilen"
+  },
+  "AboutUsOverwiev": {
+    "blogsMessage": "Veröffentlichte Blogs",
+    "viewMessage": "Ansichten zu Finsweet",
+    "userMessage": "Aktive Benutzer insgesamt"
+  },
+  "AboutUsMission": {
+    "missionTitle": "Creating valuable content for creatives all around the world",
+    "missionSubTitle": "OUR MISSION",
+    "visionTitle": "Eine Plattform, die den Einzelnen befähigt, sich zu verbessern",
+    "visionSubTitle": "UNSERE VISION"
+  },
+  "AboutUsTeam": {
+    "title": "Unser Team von Kreativen",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+  },
+  "AboutUsStartedBlock": {
+    "title": "Warum wir diesen Blog gestartet haben",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+  },
+  "ContactsSection": {
+    "subTitle": "KONTAKT US",
+    "title": "Beginnen wir eine Konversation",
+    "scheduleTitle": "Arbeitszeiten",
+    "scheduleDays": "Montag bis Freitag",
+    "scheduleHours": "9:00 AM bis 20:00 PM",
+    "scheduleSubtitle": "Unser Support-Team ist 24/7 erreichbar",
+    "scheduleContactsTitle": "Kontakt"
+  },
+  "ConversationForm": {
+    "namePlaceholder": "Vollständiger Name",
+    "emailPlaceholder": "Deine E-Mail",
+    "messagePlaceholder": "Nachricht",
+    "buttonText": "Nachricht senden"
+  },
+  "PrivacySection": {
+    "title": "Datenschutzbestimmungen",
+    "subTitle": "Zuletzt aktualisiert am 27. Januar 2022"
+  },
+  "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {DE} en {EN} other {Unbekannt}}"
+  },
+  "NextPostsSection": {
+    "title": "Was als nächstes zu lesen ist"
+  },
+  "AuthorOverview": {
+    "title": "Hallo, ich bin {name} und willkommen auf meinem Blog"
+  },
+  "AuthorPosts": {
+    "title": "Meine Beiträge"
+  }
+}

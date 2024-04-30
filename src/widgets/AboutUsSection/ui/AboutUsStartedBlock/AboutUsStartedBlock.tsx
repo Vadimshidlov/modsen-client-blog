@@ -3,11 +3,13 @@ import Image from 'next/image';
 import styles from '@/widgets/AboutUsSection/ui/AboutUsStartedBlock/AboutUsStartedBlock.module.scss';
 import whyWeStartedImageSrc from '@/widgets/AboutUsSection/assets/whyWeStartedImage.png';
 import { AboutUsArticle } from '@/widgets/AboutUsSection/ui/AboutUsArticle';
+import { useTranslations } from 'next-intl';
 
 export function AboutUsStartedBlock() {
-  const title = 'Why we started this Blog';
-  const subTitle =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.';
+  const t = useTranslations('AboutUsStartedBlock');
+
+  const title = t('title');
+  const subTitle = t('subTitle');
   const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
   ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '@/widgets/AboutUsSection/ui/AboutUsTitle/AboutUsTitle.module.scss';
 import { Inter } from 'next/font/google';
+import { useTranslations } from 'next-intl';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -9,13 +10,13 @@ const inter = Inter({
 });
 
 export function AboutUsTitle() {
+  const t = useTranslations('AboutUsTitle');
+
   return (
     <section className={styles.aboutUsTitleContainer}>
       <div className={styles.leftSideWrapper}>
-        <h3 className={`${inter.variable} ${styles.aboutUsSubTitle}`}>ABOUT US</h3>
-        <h1 className={styles.aboutUsTitle}>
-          We are a team of content writers who share their learnings
-        </h1>
+        <h3 className={`${inter.variable} ${styles.aboutUsSubTitle}`}>{t('subTitle')}</h3>
+        <h1 className={styles.aboutUsTitle}>{t('title')}</h1>
       </div>
       <span className={styles.aboutUsText}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

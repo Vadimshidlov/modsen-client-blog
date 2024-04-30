@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google';
 import { POSTS } from '@/shared/constants/posts';
 import { Button } from '@/shared/ui/Button';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -14,6 +15,7 @@ const inter = Inter({
 });
 
 export function BlogFeaturedPost() {
+  const t = useTranslations('BlogFeaturedPost');
   const featuredPost = POSTS.filter((postData) => postData.id === 1)[0];
   const { author, postDate, text, title, id, img } = featuredPost;
 
@@ -21,15 +23,15 @@ export function BlogFeaturedPost() {
     <section className={styles.blogFeaturedPost}>
       <div className={`${container.container} ${styles.postBodyWrapper}`}>
         <article className={styles.postContent}>
-          <h3 className={`${styles.postSubTitle} ${inter.variable}`}>FEATURED POST</h3>
+          <h3 className={`${styles.postSubTitle} ${inter.variable}`}>{t('subTitle')}</h3>
           <h2 className={`${styles.postTitle} ${inter.variable}`}>{title}</h2>
           <span className={styles.postAuthor}>
-            By&nbsp;
+            {t('authorTag')}&nbsp;
             <span>{author}</span> |{postDate}
           </span>
           <span className={styles.postText}>{text}</span>
           <Link href={`/posts/${id}`}>
-            <Button>Read More &gt;</Button>
+            <Button>{t('buttonText')} &gt;</Button>
           </Link>
         </article>
         <div className={styles.postImageWrapper}>
