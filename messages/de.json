@@ -37,6 +37,7 @@
     "title": "Wählen Sie eine Kategorie"
   },
   "Category": {
+    "title": "Kategorien",
     "Business": "Business",
     "Startup": "Startup",
     "Economy": "Wirtschaft",
@@ -131,5 +132,21 @@
   },
   "AuthorPosts": {
     "title": "Meine Beiträge"
+  },
+  "SearchTags": {
+    "title": "Alle Tags",
+    "Business": "Business",
+    "Experience": "Erleben Sie",
+    "Screen": "Bildschirm",
+    "Technology": "Technologie",
+    "Marketing": "Marketing",
+    "Life": "Leben"
+  },
+  "CategoriesSection": {
+    "notFoundMessage": "Es gibt keine Beiträge mit ausgewählten Tags"
+  },
+  "CategoriesSearchBar": {
+    "inputPlaceholder": "Suche nach Tag...",
+    "buttonText": "Suche"
   }
 }

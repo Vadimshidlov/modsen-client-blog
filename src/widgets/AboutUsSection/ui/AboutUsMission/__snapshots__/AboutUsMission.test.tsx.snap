@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutUsMission component tests should matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="aboutUsMissionContainer"
+  >
+    <article>
+      <h4
+        class="missionSubTitle fake-variable"
+      >
+        Mocked missionSubTitle
+      </h4>
+      <h3
+        class="missionTitle"
+      >
+        Mocked missionTitle
+      </h3>
+      <span
+        class="missionText"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+      </span>
+    </article>
+    <article>
+      <h4
+        class="missionSubTitle fake-variable"
+      >
+        Mocked visionSubTitle
+      </h4>
+      <h3
+        class="missionTitle"
+      >
+        Mocked visionTitle
+      </h3>
+      <span
+        class="missionText"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+      </span>
+    </article>
+  </section>
+</DocumentFragment>
+`;

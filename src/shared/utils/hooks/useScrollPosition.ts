@@ -5,6 +5,8 @@ import { useEffect, useRef } from 'react';
 export const useScrollPosition = (observeElement: number | string[]) => {
   const offsetRef = useRef(0);
 
+  // console.log('useScrollPosition called');
+
   useEffect(() => {
     if (offsetRef.current !== 0) {
       window.scrollTo({
