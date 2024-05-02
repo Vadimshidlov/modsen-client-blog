@@ -11,6 +11,7 @@ import { CATEGORIES } from '@/shared/constants/categories';
 import selectIconSrc from '@/features/ConversationForm/assets/select-icon.svg';
 import { ErrorMessage, Field, Form, Formik, FormikHelpers, FormikValues } from 'formik';
 import { conversationFormScheme } from '@/features/ConversationForm/constants/scheme';
+import { useTranslations } from 'next-intl';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,6 +27,7 @@ export type ConversationFormType = {
 };
 
 export function ConversationForm() {
+  const t = useTranslations('ConversationForm');
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string), []);
@@ -75,7 +77,7 @@ export function ConversationForm() {
               className={`${styles.textInput} ${inter.variable}`}
               type="text"
               name="userName"
-              placeholder="Full Name"
+              placeholder={t('namePlaceholder')}
             />
             <ErrorMessage className={styles.validationError} name="userName" component="div" />
           </label>
@@ -84,7 +86,7 @@ export function ConversationForm() {
               className={`${styles.textInput} ${inter.variable}`}
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder={t('emailPlaceholder')}
             />
             <ErrorMessage className={styles.validationError} name="email" component="div" />
           </label>
@@ -104,12 +106,12 @@ export function ConversationForm() {
               className={`${styles.textInput} ${styles.conversationMessage}`}
               name="message"
               id="message"
-              placeholder="Message"
+              placeholder={t('messagePlaceholder')}
             />
             <ErrorMessage className={styles.validationError} name="message" component="div" />
           </label>
           <Button isFormButton isSubmitting={isSubmitting} disabled={isSubmitting}>
-            {isSubmitting ? 'Loading...' : 'Send Message'}
+            {isSubmitting ? 'Loading...' : `${t('buttonText')}`}
           </Button>
         </Form>
       )}

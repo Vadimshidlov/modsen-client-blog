@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from '@/widgets/CategoriesSection/ui/CategoriesSection.module.scss';
 import container from '@/shared/styles/container.module.scss';
 import { CategoriesSearchBar } from '@/widgets/CategoriesSection/ui/CategoriesSearchBar';
@@ -8,16 +8,16 @@ import { POSTS } from '@/shared/constants/posts';
 import { PostItem } from '@/widgets/PostItem';
 import { Categories } from '@/widgets/CategoriesSection/ui/Categories';
 import { SearchTags } from '@/widgets/CategoriesSection/ui/SearchTags';
-import { useScrollPosition } from '@/shared/utils/hooks/useScrollPosition';
+import { useTranslations } from 'next-intl';
 
 export type CategoriesSectionPropsType = {
   selectedCategory: string;
 };
 
 export function CategoriesSection({ selectedCategory }: CategoriesSectionPropsType) {
-  const [selectTags, setSelectTags] = useState<string[]>([]);
+  const t = useTranslations('CategoriesSection');
 
-  useScrollPosition(selectTags);
+  const [selectTags, setSelectTags] = useState<string[]>([]);
 
   const filteredPosts = POSTS.filter(
     (postData) =>
@@ -29,12 +29,14 @@ export function CategoriesSection({ selectedCategory }: CategoriesSectionPropsTy
     <section className={`${styles.categoriesSection} ${container.container}`}>
       <div className={styles.postsContainer}>
         {filteredPosts.length === 0 && (
-          <span className={styles.postsNotFountTitle}>There are no posts with selected tags</span>
+          <span className={styles.postsNotFountTitle}>{t('notFoundMessage')}</span>
         )}
         {filteredPosts.length !== 0 &&
-          filteredPosts.map(({ id, img, category, title, text }) => (
-            <PostItem category={category} id={id} img={img} text={text} title={title} key={id} />
-          ))}
+          filteredPosts
+            .slice(0, 3)
+            .map(({ id, img, category, title, text }) => (
+              <PostItem category={category} id={id} img={img} text={text} title={title} key={id} />
+            ))}
       </div>
       <div className={styles.searchBarWrapper}>
         <SearchTags selectTags={selectTags} setSelectTags={setSelectTags} />

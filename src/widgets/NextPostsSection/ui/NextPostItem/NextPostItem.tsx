@@ -3,6 +3,7 @@ import Image, { StaticImageData } from 'next/image';
 import styles from '@/widgets/NextPostsSection/ui/NextPostItem/NextPostItem.module.scss';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,13 +28,15 @@ export function NextPostItem({
   postText,
   postId,
 }: NextPostPropsType) {
+  const t = useTranslations('BlogFeaturedPost');
+
   return (
     <article className={styles.postContainer}>
       <div className={styles.postImageWrapper}>
         <Image className={styles.postImage} src={postImage} alt="social-pic" />
       </div>
       <span className={`${styles.postDateInfo} ${inter.variable}`}>
-        By <span>{postAuthor}</span> {postDate}
+        {t('authorTag')} <span>{postAuthor}</span> {postDate}
       </span>
       <Link href={`/posts/${postId}`}>
         <h3 className={styles.postTitle}>{postTitle}</h3>

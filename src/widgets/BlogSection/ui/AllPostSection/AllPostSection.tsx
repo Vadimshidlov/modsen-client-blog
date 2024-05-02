@@ -7,8 +7,11 @@ import { POSTS } from '@/shared/constants/posts';
 import { PostItem } from '@/widgets/PostItem';
 import { ITEMS_PER_PAGE } from '@/widgets/BlogSection/constants/pagintation';
 import { useScrollPosition } from '@/shared/utils/hooks/useScrollPosition';
+import { useTranslations } from 'next-intl';
 
 export function AllPostSection() {
+  const t = useTranslations('AllPostSection');
+
   const [page, setPage] = useState(1);
 
   useScrollPosition(page);
@@ -36,7 +39,7 @@ export function AllPostSection() {
 
   return (
     <section className={`${styles.allPostSection} ${container.container}`}>
-      <h1 className={styles.sectionTitle}>All Posts</h1>
+      <h1 className={styles.sectionTitle}>{t('title')}</h1>
       <div className={styles.postsContainer}>
         {pagePosts.map(({ id, title, text, img, category }) => (
           <PostItem key={id} id={id} title={title} text={text} img={img} category={category} />
@@ -44,14 +47,14 @@ export function AllPostSection() {
       </div>
       <div className={styles.paginationController}>
         <button className={styles.paginationButton} onClick={handlePrevPage} disabled={page === 1}>
-          &lt; Prev
+          &lt; {t('prevButtonText')}
         </button>
         <button
           className={styles.paginationButton}
           onClick={handleNextPage}
           disabled={page === pagesCount}
         >
-          Next &gt;
+          {t('nextButtonText')} &gt;
         </button>
       </div>
     </section>

@@ -10,8 +10,11 @@ import { BlurBackground } from '@/widgets/Header/ui/BlurBackground';
 import burgerMenuButtonSrc from '@/widgets/Header/assets/burger-menu-button-light.svg';
 import closeBurgerMenuIcon from '@/widgets/Header/assets/close-button-svgrepo-com.svg';
 import { ModalWindow } from '@/shared/ui/ModalWindow/ModalWindow';
+import { useTranslations } from 'next-intl';
+import { LocaleSwitcher } from '@/widgets/Header/ui/LocaleSwitcher/LocaleSwitcher';
 
 export function Header() {
+  const t = useTranslations('Header');
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -33,8 +36,9 @@ export function Header() {
       >
         <NavigationBar navigationLinks={NAVIGATION_LINKS_SHORT} />
         <button type="button" className={styles.video__frame} onClick={handleToggleOpenModal}>
-          Video about us
+          {t('videoButton')}
         </button>
+        <LocaleSwitcher />
         {isBurgerOpen && (
           <Image
             className={styles.closeBurgerMenuIcon}
@@ -55,8 +59,9 @@ export function Header() {
         <iframe
           className={styles.videoContainer}
           title="video"
+          // allow="autoplay;"
           allowFullScreen
-          src="https://www.youtube.com/embed/vDkjDmnjKC0"
+          src="https://www.youtube.com/embed/vDkjDmnjKC0?autoplay=1"
         />
       </ModalWindow>
     </header>

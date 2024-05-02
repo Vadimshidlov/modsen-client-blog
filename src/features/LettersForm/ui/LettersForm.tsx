@@ -7,12 +7,16 @@ import styles from '@/features/LettersForm/ui/LettersForm.module.scss';
 import { Button } from '@/shared/ui/Button';
 import { lettersFormScheme } from '@/features/LettersForm/constants/scheme';
 import { toast } from 'react-toastify';
+import { useTranslations } from 'next-intl';
 
 export type LettersFormType = {
   email: string;
 };
 
 export function LettersForm() {
+  const t = useTranslations('LettersForm');
+  const buttonText = t('buttonText');
+
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string), []);
@@ -50,9 +54,7 @@ export function LettersForm() {
 
   return (
     <div className={styles.form__container}>
-      <h3 className={styles.form__title}>
-        Subscribe to our news letter to get latest updates and news
-      </h3>
+      <h3 className={styles.form__title}>{t('title')}</h3>
       <Formik
         validationSchema={lettersFormScheme}
         initialValues={{ email: '' }}
@@ -64,14 +66,15 @@ export function LettersForm() {
               <Field
                 type="text"
                 name="email"
+                id="email"
                 className={styles.formInput}
-                placeholder="Enter Your Email"
+                placeholder={t('inputPlaceholder')}
                 autoComplete="off"
               />
               <ErrorMessage className={styles.validationError} name="email" component="div" />
             </label>
             <Button isFormButton isSubmitting={isSubmitting} disabled={isSubmitting}>
-              {isSubmitting ? 'Loading...' : 'Subscribe'}
+              {isSubmitting ? 'Loading...' : `${buttonText}`}
             </Button>
           </Form>
         )}

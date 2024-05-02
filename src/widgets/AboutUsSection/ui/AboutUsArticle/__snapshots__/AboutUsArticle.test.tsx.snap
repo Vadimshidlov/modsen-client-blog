@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutUsArticle component tests should match snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="aboutUsTextContent"
+  >
+    <h2
+      class="aboutUsTeamTitle"
+    >
+      Title
+    </h2>
+    <h4
+      class="aboutUsTeamSubtitle"
+    >
+      Subtitle
+    </h4>
+    <span
+      class="aboutUsText"
+    >
+      Text content
+    </span>
+  </article>
+</DocumentFragment>
+`;

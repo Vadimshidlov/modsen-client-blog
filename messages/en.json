@@ -1,0 +1,152 @@
+{
+  "StartUpSection": {
+    "titleFirstPart": "POSTED ON",
+    "titleSecondPart": "STARTUP",
+    "buttonText": "Read More"
+  },
+  "NavigationBar": {
+    "Home": "Home",
+    "Blog": "Blog",
+    "About Us": "About Us",
+    "Contact us": "Contact us",
+    "Privacy Policy": "Privacy Policy"
+  },
+  "Header": {
+    "videoButton": "Video about us"
+  },
+  "AppTitle": {
+    "appTitle": "Modsen Client Blog"
+  },
+  "FeaturedPostBlock": {
+    "title": "Featured Post",
+    "authorTag": "By",
+    "buttonText": "Read More"
+  },
+  "AllPostsBlock": {
+    "title": "All Posts",
+    "linkButton": "View All"
+  },
+  "HomeAboutUs": {
+    "subTitle": "ABOUT US",
+    "title": "We are a community of content writers who share their learnings",
+    "missionSubTitle": "OUR MISION",
+    "missionTitle": "Creating valuable content for creatives all around the world",
+    "buttonText": "Read More"
+  },
+  "ChooseCategorySection": {
+    "title": "Choose A Category"
+  },
+  "Category": {
+    "title": "Categories",
+    "Business": "Business",
+    "Startup": "Startup",
+    "Economy": "Economy",
+    "Technology": "Technology"
+  },
+  "SpecialPost": {
+    "title": "WHY WE STARTED",
+    "postTitle": "It started out as a simple idea and evolved into our passion",
+    "buttonText": "Discover our story"
+  },
+  "AuthorsSection": {
+    "title": "List of Authors"
+  },
+  "LogosSection": {
+    "title": "We are",
+    "subTitle": "Featured in"
+  },
+  "TestimonialsSection": {
+    "subTitle": "TESTIMONIALS",
+    "title": "What people say about our blog"
+  },
+  "JoinTeamSection": {
+    "title": "Join our team to be a part of our story",
+    "buttonText": "Join Now"
+  },
+  "LettersForm": {
+    "title": "Subscribe to our news letter to get latest updates and news",
+    "buttonText": "Subscribe",
+    "inputPlaceholder": "Enter Your Email"
+  },
+  "BlogFeaturedPost": {
+    "subTitle": "FEATURED POST",
+    "authorTag": "By",
+    "buttonText": "Read More"
+  },
+  "AllPostSection": {
+    "title": "All Posts",
+    "prevButtonText": "Prev",
+    "nextButtonText": "Next"
+  },
+  "AboutUsTitle": {
+    "subTitle": "ABOUT US",
+    "title": "We are a team of content writers who share their learnings"
+  },
+  "AboutUsOverwiev": {
+    "blogsMessage": "Blogs Published",
+    "viewMessage": "Views on Finsweet",
+    "userMessage": "Total active User"
+  },
+  "AboutUsMission": {
+    "missionTitle": "Creating valuable content for creatives all around the world",
+    "missionSubTitle": "OUR MISSION",
+    "visionTitle": "A platform that empowers individuals to improve",
+    "visionSubTitle": "OUR VISION"
+  },
+  "AboutUsTeam": {
+    "title": "Our team of creatives",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+  },
+  "AboutUsStartedBlock": {
+    "title": "Why we started this Blog",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+  },
+  "ContactsSection": {
+    "subTitle": "CONTACT US",
+    "title": "Let’s Start a Conversation",
+    "scheduleTitle": "Working hours",
+    "scheduleDays": "Monday To Friday",
+    "scheduleHours": "9:00 AM to 8:00 PM",
+    "scheduleSubtitle": "Our Support Team is available 24/7",
+    "scheduleContactsTitle": "Contact Us"
+  },
+  "ConversationForm": {
+    "namePlaceholder": "Full Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Message",
+    "buttonText": "Send Message"
+  },
+  "PrivacySection": {
+    "title": "Privacy Policy",
+    "subTitle": "Last Updated on 27th January 2022"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, de {DE} en {EN} other {Unknown}}"
+  },
+  "NextPostsSection": {
+    "title": "What to read next"
+  },
+  "AuthorOverview": {
+    "title": "Hey there, I’m {name} and welcome to my Blog"
+  },
+  "AuthorPosts": {
+    "title": "My Posts"
+  },
+  "SearchTags": {
+    "title": "All Tags",
+    "Business": "Business",
+    "Experience": "Experience",
+    "Screen": "Screen",
+    "Technology": "Technology",
+    "Marketing": "Marketing",
+    "Life": "Life"
+  },
+  "CategoriesSection": {
+    "notFoundMessage": "There are no posts with selected tags"
+  },
+  "CategoriesSearchBar": {
+    "inputPlaceholder": "Search for Tag...",
+    "buttonText": "Search"
+  }
+}

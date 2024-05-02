@@ -9,6 +9,7 @@ import leftButtonSrc from '@/widgets/TestimonialsSection/assets/leftArrow.svg';
 import rightButtonSrc from '@/widgets/TestimonialsSection/assets/rightArrow.svg';
 import { AuthorTitleCard } from '@/shared/ui/AuthorTitleCard';
 import { FEEDBACK_ITEMS } from '@/widgets/TestimonialsSection/constants/feedback';
+import { useTranslations } from 'next-intl';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,6 +18,7 @@ const inter = Inter({
 });
 
 export function TestimonialsSection() {
+  const t = useTranslations('TestimonialsSection');
   const [activeSlide, setActiveSlide] = useState(0);
 
   const carouselPosition = -activeSlide * 100;
@@ -53,8 +55,8 @@ export function TestimonialsSection() {
     <section className={`${styles.testimotalsSection} ${container.container}`}>
       <div className={styles.contentContainer}>
         <article className={styles.infoBlock}>
-          <h3 className={`${inter.variable} ${styles.infoSubTitle}`}>TESTIMONIALS</h3>
-          <h2 className={styles.infoTitle}>What people say about our blog</h2>
+          <h3 className={`${inter.variable} ${styles.infoSubTitle}`}>{t('subTitle')}</h3>
+          <h2 className={styles.infoTitle}>{t('title')}</h2>
           <span className={styles.infoText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
           </span>

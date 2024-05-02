@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '@/widgets/CategoriesSection/ui/SearchTags/SearchTags.module.scss';
 import { SEARCH_TAGS } from '@/widgets/CategoriesSection/constants/constants';
+import { useTranslations } from 'next-intl';
 
 export type SearchTagsPropsTypes = {
   selectTags: string[];
@@ -8,9 +9,11 @@ export type SearchTagsPropsTypes = {
 };
 
 export function SearchTags({ selectTags, setSelectTags }: SearchTagsPropsTypes) {
+  const t = useTranslations('SearchTags');
+
   return (
     <div className={styles.searchTagsContainer}>
-      <h2 className={styles.searchTagsTitle}>All Tags</h2>
+      <h2 className={styles.searchTagsTitle}>{t('title')}</h2>
       <ul className={styles.searchTagsList}>
         {SEARCH_TAGS.map((searchTag) => {
           const isActiveTag = selectTags.includes(searchTag);
@@ -27,7 +30,7 @@ export function SearchTags({ selectTags, setSelectTags }: SearchTagsPropsTypes) 
                 setSelectTags([...preparedTagsList]);
               }}
             >
-              {searchTag}
+              {t(`${searchTag}`)}
             </li>
           );
         })}

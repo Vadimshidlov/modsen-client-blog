@@ -6,8 +6,11 @@ import { Button } from '@/shared/ui/Button';
 import { POSTS } from '@/shared/constants/posts';
 import Link from 'next/link';
 import { useDebounce } from '@/shared/utils';
+import { useTranslations } from 'next-intl';
 
 export function CategoriesSearchBar() {
+  const t = useTranslations('CategoriesSearchBar');
+
   const [searchValue, setSearchValue] = useState('');
   const searchValueDebounced = useDebounce(searchValue, 500);
 
@@ -33,13 +36,13 @@ export function CategoriesSearchBar() {
         <input
           className={styles.searchInput}
           type="text"
-          placeholder="Search for tag..."
+          placeholder={t('inputPlaceholder')}
           value={searchValue}
           onChange={handleSearValueChange}
         />
         <div className={styles.searchButtonWrapper}>
           <Button className={styles.searchButton} isPrimary={false}>
-            Search
+            {t('buttonText')}
           </Button>
         </div>
       </form>
