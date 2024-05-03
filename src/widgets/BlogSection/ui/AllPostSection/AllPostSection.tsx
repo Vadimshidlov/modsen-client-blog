@@ -46,13 +46,19 @@ export function AllPostSection() {
         ))}
       </div>
       <div className={styles.paginationController}>
-        <button className={styles.paginationButton} onClick={handlePrevPage} disabled={page === 1}>
+        <button
+          className={styles.paginationButton}
+          onClick={handlePrevPage}
+          disabled={page === 1}
+          data-testid="prevButton"
+        >
           &lt; {t('prevButtonText')}
         </button>
         <button
           className={styles.paginationButton}
           onClick={handleNextPage}
           disabled={page === pagesCount}
+          data-testid="nextButton"
         >
           {t('nextButtonText')} &gt;
         </button>

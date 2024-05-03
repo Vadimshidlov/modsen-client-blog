@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LettersForm component should matches snapshot 1`] = `
+<div>
+  <div
+    class="form__container"
+  >
+    <h3
+      class="form__title"
+    >
+      Mocked title
+    </h3>
+    <form
+      action="#"
+      class="form"
+    >
+      <label
+        class="formLabel"
+        for="email"
+      >
+        <input
+          autocomplete="off"
+          class="formInput"
+          data-testid="letters-form-imput"
+          id="email"
+          name="email"
+          placeholder="Mocked inputPlaceholder"
+          type="text"
+          value=""
+        />
+      </label>
+      <button
+        class="button fullWidth"
+        type="submit"
+      >
+        Mocked buttonText
+      </button>
+    </form>
+  </div>
+</div>
+`;

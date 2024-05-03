@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChooseCategorySection tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="contactsSection container"
+  >
+    <div
+      class="contactsTitleBlockContainer"
+    >
+      <h3
+        class="contactsSubTitle variable"
+      >
+        Mocked subTitle
+      </h3>
+      <h2
+        class="contactsTitle"
+      >
+        Mocked title
+      </h2>
+      <span
+        class="contactsText"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+      </span>
+    </div>
+    <div
+      class="contactsSheduleBlockContainer"
+    >
+      <div
+        class="scheduleBlock"
+      >
+        <span
+          class="scheduleSubTitle variable"
+        >
+          Mocked scheduleTitle
+        </span>
+        <h4
+          class="scheduleTitle"
+        >
+          Mocked scheduleDays
+        </h4>
+        <h4
+          class="scheduleTitle"
+        >
+          Mocked scheduleHours
+        </h4>
+        <span
+          class="scheduleText"
+        >
+          Mocked scheduleSubtitle
+        </span>
+      </div>
+      <div
+        class="scheduleBlock"
+      >
+        <span
+          class="scheduleSubTitle variable"
+        >
+          Mocked scheduleContactsTitle
+        </span>
+        <h4
+          class="scheduleTitle"
+        >
+          020 7993 2905
+        </h4>
+        <span
+          class="scheduleText"
+        >
+          hello@finsweet.com
+        </span>
+      </div>
+    </div>
+    <form
+      action="#"
+      class="conversationForm"
+      data-testid="conversation-form"
+    >
+      <label
+        for="userName"
+      >
+        <input
+          class="textInput variable"
+          data-testid="userName-input"
+          name="userName"
+          placeholder="Mocked namePlaceholder"
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        for="email"
+      >
+        <input
+          class="textInput variable"
+          data-testid="email-input"
+          name="email"
+          placeholder="Mocked emailPlaceholder"
+          type="email"
+          value=""
+        />
+      </label>
+      <div
+        class="selectCategoryWrapper"
+      >
+        <select
+          class="selectCategory"
+          data-testid="conversation-select"
+          name="query"
+        >
+          <option
+            class="select__item"
+            value="Business"
+          >
+            Business
+          </option>
+          <option
+            class="select__item"
+            value="Startup"
+          >
+            Startup
+          </option>
+          <option
+            class="select__item"
+            value="Economy"
+          >
+            Economy
+          </option>
+          <option
+            class="select__item"
+            value="Technology"
+          >
+            Technology
+          </option>
+        </select>
+        <img
+          alt="select-icon"
+          class="selectIcon"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+      </div>
+      <label
+        for="message"
+      >
+        <textarea
+          class="textInput conversationMessage"
+          data-testid="message-input"
+          id="message"
+          name="message"
+          placeholder="Mocked messagePlaceholder"
+        />
+      </label>
+      <button
+        class="button fullWidth"
+        type="submit"
+      >
+        Mocked buttonText
+      </button>
+    </form>
+  </section>
+</div>
+`;

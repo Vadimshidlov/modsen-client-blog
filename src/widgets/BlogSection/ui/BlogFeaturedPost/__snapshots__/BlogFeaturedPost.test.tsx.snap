@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogFeaturedPost tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="blogFeaturedPost"
+  >
+    <div
+      class="container postBodyWrapper"
+    >
+      <article
+        class="postContent"
+      >
+        <h3
+          class="postSubTitle variable"
+        >
+          Mocked subTitle
+        </h3>
+        <h2
+          class="postTitle variable"
+        >
+          Step-by-step guide to choosing great font pairs
+        </h2>
+        <span
+          class="postAuthor"
+        >
+          Mocked authorTag
+           
+          <span>
+            Floyd Miles
+          </span>
+           |
+          May 23, 2024
+        </span>
+        <span
+          class="postText"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </span>
+        <a
+          href="/posts/1"
+        >
+          <button
+            class="button"
+            type="button"
+          >
+            Mocked buttonText
+             &gt;
+          </button>
+        </a>
+      </article>
+      <div
+        class="postImageWrapper"
+      >
+        <img
+          alt="post-image"
+          class="postImage"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          width="40"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+`;

@@ -11,6 +11,14 @@ export type SearchTagsPropsTypes = {
 export function SearchTags({ selectTags, setSelectTags }: SearchTagsPropsTypes) {
   const t = useTranslations('SearchTags');
 
+  const handleSetSearchTag = (searchTag: string) => {
+    const preparedTagsList = selectTags.includes(searchTag)
+      ? selectTags.filter((tag) => tag !== searchTag)
+      : [...selectTags, searchTag];
+
+    setSelectTags([...preparedTagsList]);
+  };
+
   return (
     <div className={styles.searchTagsContainer}>
       <h2 className={styles.searchTagsTitle}>{t('title')}</h2>
@@ -22,13 +30,7 @@ export function SearchTags({ selectTags, setSelectTags }: SearchTagsPropsTypes) 
             <li
               key={searchTag}
               className={`${styles.searchTagItem} ${isActiveTag ? `${styles.activeTag}` : ''}`}
-              onClick={() => {
-                const preparedTagsList = selectTags.includes(searchTag)
-                  ? selectTags.filter((tag) => tag !== searchTag)
-                  : [...selectTags, searchTag];
-
-                setSelectTags([...preparedTagsList]);
-              }}
+              onClick={() => handleSetSearchTag(searchTag)}
             >
               {t(`${searchTag}`)}
             </li>

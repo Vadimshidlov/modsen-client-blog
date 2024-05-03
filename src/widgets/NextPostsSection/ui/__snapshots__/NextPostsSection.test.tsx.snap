@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="nextPostSection"
+  >
+    <h2
+      class="sectionTitle"
+    >
+      Mocked title
+    </h2>
+    <div
+      class="nextPostsContainer"
+    >
+      <article
+        class="postContainer"
+      >
+        <div
+          class="postImageWrapper"
+        >
+          <img
+            alt="social-pic"
+            class="postImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <span
+          class="postDateInfo variable"
+        >
+          Mocked authorTag
+           
+          <span>
+            Dianne Russell
+          </span>
+           
+          Aug 23, 2024
+        </span>
+        <a
+          href="/posts/2"
+        >
+          <h3
+            class="postTitle"
+          >
+            Design tips for designers that cover everything you need
+          </h3>
+        </a>
+        <span
+          class="postText"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </span>
+      </article>
+      <article
+        class="postContainer"
+      >
+        <div
+          class="postImageWrapper"
+        >
+          <img
+            alt="social-pic"
+            class="postImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <span
+          class="postDateInfo variable"
+        >
+          Mocked authorTag
+           
+          <span>
+            Jenny Wilson
+          </span>
+           
+          Aug 23, 2024
+        </span>
+        <a
+          href="/posts/3"
+        >
+          <h3
+            class="postTitle"
+          >
+            How to build rapport with your web design clients
+          </h3>
+        </a>
+        <span
+          class="postText"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </span>
+      </article>
+      <article
+        class="postContainer"
+      >
+        <div
+          class="postImageWrapper"
+        >
+          <img
+            alt="social-pic"
+            class="postImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <span
+          class="postDateInfo variable"
+        >
+          Mocked authorTag
+           
+          <span>
+            Leslie Alexander
+          </span>
+           
+          Aug 23, 2024
+        </span>
+        <a
+          href="/posts/4"
+        >
+          <h3
+            class="postTitle"
+          >
+            Logo design trends to avoid in 2022
+          </h3>
+        </a>
+        <span
+          class="postText"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </span>
+      </article>
+    </div>
+  </section>
+</div>
+`;

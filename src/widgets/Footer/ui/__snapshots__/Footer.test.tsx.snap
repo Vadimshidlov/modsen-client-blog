@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChooseCategorySection tests should matches snapshot 1`] = `
+<div>
+  <footer
+    class="footer__container"
+  >
+    <div
+      class="footer__titleContainer"
+    >
+      <h1
+        class="app__title"
+      >
+        Mocked appTitle
+      </h1>
+      <ul
+        class="navigation"
+      >
+        <li
+          class="navigation__item"
+        >
+          <a
+            data-testid="home-header-link"
+            href="/"
+          >
+            Mocked Home
+          </a>
+        </li>
+        <li
+          class="navigation__item"
+        >
+          <a
+            data-testid="blog-header-link"
+            href="/blog"
+          >
+            Mocked Blog
+          </a>
+        </li>
+        <li
+          class="navigation__item"
+        >
+          <a
+            data-testid="about us-header-link"
+            href="/about"
+          >
+            Mocked About Us
+          </a>
+        </li>
+        <li
+          class="navigation__item"
+        >
+          <a
+            data-testid="contact us-header-link"
+            href="/"
+          >
+            Mocked Contact us
+          </a>
+        </li>
+        <li
+          class="navigation__item"
+        >
+          <a
+            data-testid="privacy policy-header-link"
+            href="/privacy"
+          >
+            Mocked Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="form__container"
+    >
+      <h3
+        class="form__title"
+      >
+        Mocked title
+      </h3>
+      <form
+        action="#"
+        class="form"
+      >
+        <label
+          class="formLabel"
+          for="email"
+        >
+          <input
+            autocomplete="off"
+            class="formInput"
+            data-testid="letters-form-imput"
+            id="email"
+            name="email"
+            placeholder="Mocked inputPlaceholder"
+            type="text"
+            value=""
+          />
+        </label>
+        <button
+          class="button fullWidth"
+          type="submit"
+        >
+          Mocked buttonText
+        </button>
+      </form>
+    </div>
+    <div
+      class="footer__contactsContainer"
+    >
+      <div
+        class="footer__addressContainer"
+      >
+        <span
+          class="footer__address"
+        >
+          Finstreet 118 2561 Fintown
+        </span>
+        <span
+          class="footer__address"
+        >
+          Hello@finsweet.com 020 7993 2905
+        </span>
+      </div>
+      <ul
+        class="footer__social"
+      >
+        <li>
+          <a
+            href="https://www.facebook.com"
+          >
+            <img
+              alt="social-pic"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com"
+          >
+            <img
+              alt="social-pic"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com"
+          >
+            <img
+              alt="social-pic"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com"
+          >
+            <img
+              alt="social-pic"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+`;

@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConversationForm component should matches snapshot 1`] = `
+<div>
+  <form
+    action="#"
+    class="conversationForm"
+    data-testid="conversation-form"
+  >
+    <label
+      for="userName"
+    >
+      <input
+        class="textInput variable"
+        data-testid="userName-input"
+        name="userName"
+        placeholder="Mocked namePlaceholder"
+        type="text"
+        value=""
+      />
+    </label>
+    <label
+      for="email"
+    >
+      <input
+        class="textInput variable"
+        data-testid="email-input"
+        name="email"
+        placeholder="Mocked emailPlaceholder"
+        type="email"
+        value=""
+      />
+    </label>
+    <div
+      class="selectCategoryWrapper"
+    >
+      <select
+        class="selectCategory"
+        data-testid="conversation-select"
+        name="query"
+      >
+        <option
+          class="select__item"
+          value="Business"
+        >
+          Business
+        </option>
+        <option
+          class="select__item"
+          value="Startup"
+        >
+          Startup
+        </option>
+        <option
+          class="select__item"
+          value="Economy"
+        >
+          Economy
+        </option>
+        <option
+          class="select__item"
+          value="Technology"
+        >
+          Technology
+        </option>
+      </select>
+      <img
+        alt="select-icon"
+        class="selectIcon"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+    </div>
+    <label
+      for="message"
+    >
+      <textarea
+        class="textInput conversationMessage"
+        data-testid="message-input"
+        id="message"
+        name="message"
+        placeholder="Mocked messagePlaceholder"
+      />
+    </label>
+    <button
+      class="button fullWidth"
+      type="submit"
+    >
+      Mocked buttonText
+    </button>
+  </form>
+</div>
+`;

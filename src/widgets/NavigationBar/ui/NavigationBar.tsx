@@ -19,7 +19,7 @@ export function NavigationBar({ navigationLinks }: NavigationBarPropsType) {
     <ul className={styles.navigation}>
       {navigationLinks.map(({ text, link }) => (
         <li className={styles.navigation__item} key={text}>
-          <Link key={text} href={link}>
+          <Link key={text} href={link} data-testid={`${text.toLowerCase()}-header-link`}>
             {t(`${text}`)}
           </Link>
         </li>

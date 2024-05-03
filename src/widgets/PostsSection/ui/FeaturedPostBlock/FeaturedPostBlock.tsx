@@ -1,32 +1,31 @@
 import React from 'react';
 import styles from '@/widgets/PostsSection/ui/FeaturedPostBlock/FeaturedPostBlock.module.scss';
 import Image from 'next/image';
-import featuredPost from '@/widgets/PostsSection/assets/white-concrete-building-1838640.jpg';
 import { Button } from '@/shared/ui/Button/Button';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { POSTS } from '@/shared/constants/posts';
 
 export function FeaturedPostBlock() {
   const t = useTranslations('FeaturedPostBlock');
+
+  const featuredPostData = POSTS[POSTS.length - 1];
+  const { id, author, postDate, title, text, img } = featuredPostData;
 
   return (
     <section className={styles.section__container}>
       <h3 className={styles.section__title}>{t('title')}</h3>
       <div className={styles.post__container}>
-        <Image
-          className={styles.post__image}
-          alt="Mountains"
-          src={featuredPost}
-          placeholder="blur"
-        />
-        <span className={styles.post__authorInfo}>{t('authorTag')} John Doe l May 23, 2022</span>
-        <h4 className={styles.post__title}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-        </h4>
-        <span className={styles.post__text}>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        <Image className={styles.post__image} alt="Mountains" src={img} placeholder="blur" />
+        <span className={styles.post__authorInfo}>
+          {t('authorTag')}
+          &nbsp;{author} {postDate}
         </span>
-        <Button>{t('buttonText')} &gt;</Button>
+        <h4 className={styles.post__title}>{title}</h4>
+        <span className={styles.post__text}>{text}</span>
+        <Link href={`/posts/${id}`}>
+          <Button>{t('buttonText')} &gt;</Button>
+        </Link>
       </div>
     </section>
   );

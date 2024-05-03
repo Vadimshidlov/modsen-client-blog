@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpecialPostSection tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="specialPostSection container"
+  >
+    <img
+      alt="special-post-image"
+      class="postImage"
+      data-nimg="1"
+      decoding="async"
+      height="40"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+      width="40"
+    />
+    <article
+      class="contentBlock"
+    >
+      <h3
+        class="postSubTitle variable"
+      >
+        Mocked title
+      </h3>
+      <h2
+        class="postTitle"
+      >
+        Mocked postTitle
+      </h2>
+      <span
+        class="postText"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+      </span>
+      <button
+        class="button"
+        type="button"
+      >
+        <a
+          href="/about"
+        >
+          Mocked buttonText
+           &gt;
+        </a>
+      </button>
+    </article>
+  </section>
+</div>
+`;

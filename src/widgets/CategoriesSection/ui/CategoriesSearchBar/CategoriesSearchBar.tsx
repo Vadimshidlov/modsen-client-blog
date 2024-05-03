@@ -39,6 +39,7 @@ export function CategoriesSearchBar() {
           placeholder={t('inputPlaceholder')}
           value={searchValue}
           onChange={handleSearValueChange}
+          data-testid="searchTag-input"
         />
         <div className={styles.searchButtonWrapper}>
           <Button className={styles.searchButton} isPrimary={false}>
@@ -51,14 +52,16 @@ export function CategoriesSearchBar() {
           filteredPosts.length !== 0 &&
           filteredPosts.slice(0, 5).map(({ title, tags, id }) => (
             <li className={styles.filteredPost} key={id}>
-              <Link href={`/posts/${id}`}>
+              <Link href={`/posts/${id}`} data-testid={`searched-post-${id}`}>
                 <h3 className={styles.filteredPostTitle}>{title}</h3>
                 <span className={styles.filteredPostTags}>{tags.join(', ')}</span>
               </Link>
             </li>
           ))}
         {searchValue !== '' && filteredPosts.length === 0 && (
-          <li className={styles.filteredPostsNotFound}>Posts not found</li>
+          <li className={styles.filteredPostsNotFound} data-testid="not-found-posts">
+            Posts not found
+          </li>
         )}
       </ul>
     </div>

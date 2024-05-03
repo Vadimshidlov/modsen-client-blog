@@ -32,7 +32,6 @@
 
         @media (max-width: $tablet) {
           @include headingThree;
-
         }
 
         @media (max-width: $mobile) {
@@ -74,8 +73,23 @@
     }
 
     .postImageWrapper {
+      max-width: 515px;
+
+      @media (max-width: 1000px) {
+        align-self: center;
+      }
+
       .postImage {
+        @media (max-width: $tablet) {
+          height: 300px;
+        }
+
+        @media (max-width: $mobile) {
+          height: 250px;
+        }
+
         width: 100%;
+        height: 359px;
         object-fit: cover;
       }
     }

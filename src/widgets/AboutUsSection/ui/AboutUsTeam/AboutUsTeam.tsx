@@ -17,7 +17,7 @@ export function AboutUsTeam() {
 
   return (
     <section className={styles.aboutUsTeamSection}>
-      <AboutUsArticle title={title} subTitle={subTitle} text={text} />
+      <AboutUsArticle title={title} subTitle={subTitle} text={text} data-testid="aboutus-article" />
       <div className={styles.aboutUsTeamImageWrapper}>
         <Image
           placeholder="blur"

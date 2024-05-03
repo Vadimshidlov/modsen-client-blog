@@ -1,0 +1,20 @@
+.errorContainer {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+
+  .errorTitle {
+    @include headingTwo;
+
+    @media (max-width: $tablet) {
+      @include headingThree;
+    }
+
+    @media (max-width: $mobile) {
+      @include headingFour;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutUsTitle tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="authorPostsSection"
+  >
+    <h1
+      class="sectionTitle"
+    >
+      Mocked title
+    </h1>
+    <article
+      class="authorPostsContainer"
+    />
+  </section>
+</div>
+`;

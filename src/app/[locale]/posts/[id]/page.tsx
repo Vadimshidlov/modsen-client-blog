@@ -1,8 +1,8 @@
 import React from 'react';
 import { JoinTeamSection } from '@/widgets/JoinTeamSection';
-import { BlogPostItem } from '@/widgets/BlogPostSection/ui/BlogPostItem';
 import container from '@/shared/styles/container.module.scss';
 import { NextPostsSection } from '@/widgets/NextPostsSection';
+import { BlogPostItem } from '@/widgets/BlogPostItem';
 
 export type PostPageProps = {
   params: {

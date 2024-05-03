@@ -28,7 +28,7 @@ export function HomeAboutUs() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
           </span>
-          <Link href="/">
+          <Link href="/about">
             <span className={styles.aboutButton}>{t('buttonText')} &gt;</span>
           </Link>
         </article>

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturedPostBlock tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="section__container"
+  >
+    <h3
+      class="section__title"
+    >
+      Mocked title
+    </h3>
+    <div
+      class="post__container"
+    >
+      <img
+        alt="Mountains"
+        class="post__image"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+        width="40"
+      />
+      <span
+        class="post__authorInfo"
+      >
+        Mocked authorTag
+         
+        Robert Fox
+         
+        July 20, 2024
+      </span>
+      <h4
+        class="post__title"
+      >
+        Rabbit’s R1 is a little AI gadget that grows on you: 
+      </h4>
+      <span
+        class="post__text"
+      >
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      </span>
+      <a
+        href="/posts/9"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          Mocked buttonText
+           &gt;
+        </button>
+      </a>
+    </div>
+  </section>
+</div>
+`;

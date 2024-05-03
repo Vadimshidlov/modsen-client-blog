@@ -70,6 +70,7 @@ export function LettersForm() {
                 className={styles.formInput}
                 placeholder={t('inputPlaceholder')}
                 autoComplete="off"
+                data-testid="letters-form-imput"
               />
               <ErrorMessage className={styles.validationError} name="email" component="div" />
             </label>

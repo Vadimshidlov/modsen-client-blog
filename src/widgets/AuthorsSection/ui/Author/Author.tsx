@@ -17,7 +17,9 @@ export function Author({ id, avatarSrc, name, job, company }: AuthorPropsType) {
     <li className={styles.authorsItem}>
       <Image className={styles.authorsAvatar} alt="Mountains" src={avatarSrc} />
       <Link href={`/authors/${id}`}>
-        <span className={styles.authorName}>{name}</span>
+        <span className={styles.authorName} data-testid={`author-link-${id}`}>
+          {name}
+        </span>
       </Link>
       <span className={styles.authorJobInfo}>
         {job} @{company}

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutUsOverwiev tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="owerviewContainer"
+  >
+    <img
+      alt="owerview-image"
+      class="owerviewImage"
+      data-nimg="1"
+      decoding="async"
+      height="40"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style="color: transparent;"
+      width="40"
+    />
+    <div
+      class="owerviewDataContainer"
+    >
+      <div
+        class="owerviewDataItem"
+      >
+        <span
+          class="owerviewDataTitle"
+        >
+          12+
+        </span>
+        Mocked blogsMessage
+      </div>
+      <div
+        class="owerviewDataItem"
+      >
+        <span
+          class="owerviewDataTitle"
+        >
+          18K+
+        </span>
+        Mocked viewMessage
+      </div>
+      <div
+        class="owerviewDataItem"
+      >
+        <span
+          class="owerviewDataTitle"
+        >
+          30K+
+        </span>
+        Mocked userMessage
+      </div>
+    </div>
+    <div
+      class="colorBarContainer"
+    >
+      <div
+        class="firstColorBar"
+      />
+      <div
+        class="secondColorBar"
+      />
+    </div>
+  </section>
+</div>
+`;

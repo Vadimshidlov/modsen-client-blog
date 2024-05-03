@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoriesSearchBar tests should matches snapshot 1`] = `
+<div>
+  <div
+    class="searchBarContainer"
+  >
+    <form
+      action="submit"
+      class="searchBarForm"
+    >
+      <input
+        class="searchInput"
+        data-testid="searchTag-input"
+        placeholder="Mocked inputPlaceholder"
+        type="text"
+        value=""
+      />
+      <div
+        class="searchButtonWrapper"
+      >
+        <button
+          class="button borderedButton"
+          type="button"
+        >
+          Mocked buttonText
+        </button>
+      </div>
+    </form>
+    <ul
+      class="filteredPosts"
+    />
+  </div>
+</div>
+`;

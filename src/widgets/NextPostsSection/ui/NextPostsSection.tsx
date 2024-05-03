@@ -24,6 +24,7 @@ export function NextPostsSection({ activePostId }: NextPostsSectionPropsType) {
             postDate={postDate}
             postAuthor={author}
             postImage={img}
+            key={id}
           />
         ))}
       </div>

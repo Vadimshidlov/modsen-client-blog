@@ -35,7 +35,12 @@ export function Header() {
         className={`${styles.header__navigation__container} ${isBurgerOpen ? `${styles.burgerActive}` : ''}`}
       >
         <NavigationBar navigationLinks={NAVIGATION_LINKS_SHORT} />
-        <button type="button" className={styles.video__frame} onClick={handleToggleOpenModal}>
+        <button
+          type="button"
+          className={styles.video__frame}
+          onClick={handleToggleOpenModal}
+          data-testid="modal-video-button"
+        >
           {t('videoButton')}
         </button>
         <LocaleSwitcher />
@@ -59,9 +64,11 @@ export function Header() {
         <iframe
           className={styles.videoContainer}
           title="video"
+          // src="https://www.youtube.com/embed/vDkjDmnjKC0?autoplay=1"
+          src="https://www.youtube.com/embed/vDkjDmnjKC0"
           // allow="autoplay;"
           allowFullScreen
-          src="https://www.youtube.com/embed/vDkjDmnjKC0?autoplay=1"
+          data-testid="video-frame"
         />
       </ModalWindow>
     </header>

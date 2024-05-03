@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchTags tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="categoryTitleContainer"
+  >
+    <h1
+      class="categoryTitle"
+    >
+      Mocked Buisiness
+    </h1>
+    <span
+      class="categoryDescription"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+    </span>
+    <span
+      class="categoryPath variable"
+    >
+      BLOG &gt; 
+      MOCKED BUISINESS
+    </span>
+  </section>
+</div>
+`;

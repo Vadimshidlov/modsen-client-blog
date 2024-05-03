@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutUsTitle tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="aboutUsTitleContainer"
+  >
+    <div
+      class="leftSideWrapper"
+    >
+      <h3
+        class="fake-variable aboutUsSubTitle"
+      >
+        Mocked subTitle
+      </h3>
+      <h1
+        class="aboutUsTitle"
+      >
+        Mocked title
+      </h1>
+    </div>
+    <span
+      class="aboutUsText"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </span>
+  </section>
+</div>
+`;

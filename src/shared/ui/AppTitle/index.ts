@@ -1,1 +1,1 @@
-export { AppTitle } from '@/shared/ui/AppTitle/AppTitle.';
+export { AppTitle } from '@/shared/ui/AppTitle/AppTitle';
