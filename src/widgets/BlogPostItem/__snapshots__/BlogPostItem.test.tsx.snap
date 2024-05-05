@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPostItem tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="blogPostContainer"
+  >
+    <div
+      class="postPreviewBlock"
+    >
+      <div
+        class="authorInfoBlock"
+      >
+        <img
+          alt="author-avatar"
+          class="authorInfoAvatar"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+        <div
+          class="authorInfoText"
+        >
+          <a
+            href="/authors/1"
+          >
+            <span
+              class="authorInfoName"
+            >
+              Floyd Miles
+            </span>
+          </a>
+          <span
+            class="authorInfoAddress"
+          >
+            Posted on May 23, 2024
+          </span>
+        </div>
+      </div>
+      <h1
+        class="postPreviewTitle"
+      >
+        Step-by-step guide to choosing great font pairs
+      </h1>
+      <div
+        class="postCategoryInfo"
+      >
+        <img
+          alt="category-pic"
+          class="postCategoryImage"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+        <span
+          class="postCategoryName"
+        >
+          Technology
+        </span>
+      </div>
+    </div>
+    <img
+      alt="post-image"
+      class="postImage"
+      data-nimg="1"
+      decoding="async"
+      height="40"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style="color: transparent;"
+      width="40"
+    />
+    <article
+      class="postText"
+    >
+      <div
+        class="firstPartTextWrapper"
+      >
+        <h2
+          class="postTextTitle"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </h2>
+        <span
+          class="postTextMessage"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+        </span>
+      </div>
+      <div
+        class="secondPartTextWrapper"
+      >
+        <h2
+          class="postTextTitle"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </h2>
+        <span
+          class="postTextMessage"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+        </span>
+        <span
+          class="postTextMessage"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+        </span>
+        <ul
+          class="postTextList"
+        >
+          <li
+            class="postTextListItem"
+          >
+            Lorem ipsum dolor sit amet
+          </li>
+          <li
+            class="postTextListItem"
+          >
+            Non blandit massa enim nec scelerisque
+          </li>
+          <li
+            class="postTextListItem"
+          >
+            Neque egestas congue quisque egestas
+          </li>
+        </ul>
+        <span
+          class="postTextMessage"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+        </span>
+      </div>
+      <div
+        class="threePartTextWrapper"
+      >
+        <h2
+          class="postTextTitle"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </h2>
+        <span
+          class="postTextMessage"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+        </span>
+      </div>
+    </article>
+  </section>
+</div>
+`;

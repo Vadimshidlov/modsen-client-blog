@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useMemo, useState } from 'react';
-import styles from '@/widgets/BlogSection/ui/AllPostSection/AllPostSection.module.scss';
-import container from '@/shared/styles/container.module.scss';
 import { POSTS } from '@/shared/constants/posts';
 import { PostItem } from '@/widgets/PostItem';
 import { ITEMS_PER_PAGE } from '@/widgets/BlogSection/constants/pagintation';
 import { useScrollPosition } from '@/shared/utils/hooks/useScrollPosition';
 import { useTranslations } from 'next-intl';
+import container from '@/shared/styles/container.module.scss';
+import styles from '@/widgets/BlogSection/ui/AllPostSection/AllPostSection.module.scss';
 
 export function AllPostSection() {
   const t = useTranslations('AllPostSection');
@@ -46,13 +46,19 @@ export function AllPostSection() {
         ))}
       </div>
       <div className={styles.paginationController}>
-        <button className={styles.paginationButton} onClick={handlePrevPage} disabled={page === 1}>
+        <button
+          className={styles.paginationButton}
+          onClick={handlePrevPage}
+          disabled={page === 1}
+          data-testid="prevButton"
+        >
           &lt; {t('prevButtonText')}
         </button>
         <button
           className={styles.paginationButton}
           onClick={handleNextPage}
           disabled={page === pagesCount}
+          data-testid="nextButton"
         >
           {t('nextButtonText')} &gt;
         </button>

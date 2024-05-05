@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from '@/widgets/JoinTeamSection/ui/JoinTeamSection.module.scss';
-import { Button } from '@/shared/ui/Button';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { Button } from '@/shared/ui/Button';
+import styles from '@/widgets/JoinTeamSection/ui/JoinTeamSection.module.scss';
 
 export function JoinTeamSection() {
   const t = useTranslations('JoinTeamSection');

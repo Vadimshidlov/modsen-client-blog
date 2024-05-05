@@ -11,7 +11,7 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const interSecond = Inter({
+const interRegular = Inter({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-inter',
@@ -32,7 +32,7 @@ export function ContactsSection() {
       </div>
       <div className={styles.contactsSheduleBlockContainer}>
         <div className={styles.scheduleBlock}>
-          <span className={`${styles.scheduleSubTitle} ${interSecond.variable}`}>
+          <span className={`${styles.scheduleSubTitle} ${interRegular.variable}`}>
             {t('scheduleTitle')}
           </span>
           <h4 className={styles.scheduleTitle}>{t('scheduleDays')}</h4>
@@ -40,7 +40,7 @@ export function ContactsSection() {
           <span className={styles.scheduleText}>{t('scheduleSubtitle')}</span>
         </div>
         <div className={styles.scheduleBlock}>
-          <span className={`${styles.scheduleSubTitle} ${interSecond.variable}`}>
+          <span className={`${styles.scheduleSubTitle} ${interRegular.variable}`}>
             {t('scheduleContactsTitle')}
           </span>
           <h4 className={styles.scheduleTitle}>020 7993 2905</h4>

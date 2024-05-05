@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchTags tests should matches snapshot 1`] = `
+<div>
+  <div
+    class="searchTagsContainer"
+  >
+    <h2
+      class="searchTagsTitle"
+    >
+      Mocked title
+    </h2>
+    <ul
+      class="searchTagsList"
+    >
+      <li
+        class="searchTagItem "
+      >
+        Mocked Business
+      </li>
+      <li
+        class="searchTagItem "
+      >
+        Mocked Experience
+      </li>
+      <li
+        class="searchTagItem "
+      >
+        Mocked Screen
+      </li>
+      <li
+        class="searchTagItem "
+      >
+        Mocked Technology
+      </li>
+      <li
+        class="searchTagItem "
+      >
+        Mocked Marketing
+      </li>
+      <li
+        class="searchTagItem "
+      >
+        Mocked Life
+      </li>
+    </ul>
+  </div>
+</div>
+`;

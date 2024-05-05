@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogosSection tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="logosSection container"
+  >
+    <div
+      class="logosTitleContainer"
+    >
+      <span
+        class="logosSubTitle"
+      >
+        Mocked title
+      </span>
+      <span
+        class="logosTitle"
+      >
+        Mocked subTitle
+      </span>
+    </div>
+    <ul
+      class="logosContainer"
+    >
+      <li>
+        <a
+          href="/"
+        >
+          <img
+            alt="logo-pic"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          <img
+            alt="logo-pic"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          <img
+            alt="logo-pic"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          <img
+            alt="logo-pic"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          <img
+            alt="logo-pic"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+`;

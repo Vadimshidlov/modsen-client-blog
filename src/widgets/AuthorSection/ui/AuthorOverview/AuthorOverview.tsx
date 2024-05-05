@@ -1,21 +1,17 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Inter } from 'next/font/google';
-import styles from '@/widgets/AuthorSection/ui/AuthorOverview/AuthorOverview.module.scss';
 import { SOCIALS } from '@/shared/constants/socials';
 import { useTranslations } from 'next-intl';
+import { AuthorOverviewPropsType } from '@/shared/types';
+import styles from '@/widgets/AuthorSection/ui/AuthorOverview/AuthorOverview.module.scss';
 
 const inter = Inter({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-inter',
 });
-
-export type AuthorOverviewPropsType = {
-  img: string | StaticImageData;
-  name: string;
-};
 
 export function AuthorOverview({ name, img }: AuthorOverviewPropsType) {
   const t = useTranslations('AuthorOverview');

@@ -8,10 +8,6 @@ const meta: Meta<typeof Button> = {
     isFormButton: { control: 'boolean' },
     isPrimary: { control: 'boolean' },
     children: { control: 'text' },
-    type: {
-      options: ['button', 'reset', 'submit'],
-      control: { type: 'radio' },
-    },
   },
 };
 

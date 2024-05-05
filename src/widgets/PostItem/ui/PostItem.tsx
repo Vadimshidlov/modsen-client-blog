@@ -1,23 +1,16 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import styles from '@/widgets/PostItem/ui/PostItem.module.scss';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { PostItemPropsType } from '@/shared/types';
 
 const inter = Inter({
   subsets: ['latin'],
   weight: '600',
   variable: '--font-inter',
 });
-
-export type PostItemPropsType = {
-  id: number;
-  title: string;
-  text: string;
-  category: string;
-  img: string | StaticImageData;
-};
 
 export function PostItem({ id, title, text, category, img }: PostItemPropsType) {
   const t = useTranslations('Category');

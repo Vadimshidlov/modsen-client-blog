@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChooseCategorySection tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="chooseCategoryContainer container"
+  >
+    <h3
+      class="sectionTitle"
+    >
+      Mocked title
+    </h3>
+    <ul
+      class="categoriesContainer"
+    >
+      <li
+        class="categoriesItem"
+      >
+        <a
+          data-testid="category-link-business"
+          href="/category/business"
+        >
+          <img
+            alt="category-image"
+            class="categoryImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <h4
+            class="categoryTitle"
+          >
+            Mocked Business
+          </h4>
+          <span
+            class="categoryText"
+          >
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </span>
+        </a>
+      </li>
+      <li
+        class="categoriesItem"
+      >
+        <a
+          data-testid="category-link-startup"
+          href="/category/startup"
+        >
+          <img
+            alt="category-image"
+            class="categoryImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <h4
+            class="categoryTitle"
+          >
+            Mocked Startup
+          </h4>
+          <span
+            class="categoryText"
+          >
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </span>
+        </a>
+      </li>
+      <li
+        class="categoriesItem"
+      >
+        <a
+          data-testid="category-link-economy"
+          href="/category/economy"
+        >
+          <img
+            alt="category-image"
+            class="categoryImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <h4
+            class="categoryTitle"
+          >
+            Mocked Economy
+          </h4>
+          <span
+            class="categoryText"
+          >
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </span>
+        </a>
+      </li>
+      <li
+        class="categoriesItem"
+      >
+        <a
+          data-testid="category-link-technology"
+          href="/category/technology"
+        >
+          <img
+            alt="category-image"
+            class="categoryImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <h4
+            class="categoryTitle"
+          >
+            Mocked Technology
+          </h4>
+          <span
+            class="categoryText"
+          >
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+`;

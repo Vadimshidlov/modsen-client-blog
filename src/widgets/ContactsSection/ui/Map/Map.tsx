@@ -38,5 +38,5 @@ export function Map() {
     return () => map.remove();
   }, []);
 
-  return <div className={styles.mapContainer} ref={mapRef} />;
+  return <div className={styles.mapContainer} ref={mapRef} data-testid="conversation-map" />;
 }

@@ -9,7 +9,7 @@ export function LocaleSwitcher() {
   return (
     <LocaleSwitcherSelect defaultValue={locale}>
       {locales.map((cur) => (
-        <option key={cur} value={cur}>
+        <option key={cur} value={cur} data-testid={`locale-${cur}`}>
           {t('locale', { locale: cur })}
         </option>
       ))}

@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllPostsBlock tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="allPosts__container"
+  >
+    <div
+      class="allPostsHeader__container"
+    >
+      <h3
+        class="section__title"
+      >
+        Mocked title
+      </h3>
+      <a
+        class="section__link"
+        href="/blog"
+      >
+        <span>
+          Mocked linkButton
+        </span>
+      </a>
+    </div>
+    <a
+      class="section__link"
+      href="/posts/1"
+    >
+      <div
+        class="post__container"
+      >
+        <span
+          class="post__authorInfo"
+        >
+          By 
+          <span>
+            Floyd Miles
+          </span>
+           
+          May 23, 2024
+        </span>
+        <h4
+          class="post__text"
+        >
+          Step-by-step guide to choosing great font pairs
+        </h4>
+      </div>
+    </a>
+    <a
+      class="section__link"
+      href="/posts/2"
+    >
+      <div
+        class="post__container"
+      >
+        <span
+          class="post__authorInfo"
+        >
+          By 
+          <span>
+            Dianne Russell
+          </span>
+           
+          Aug 23, 2024
+        </span>
+        <h4
+          class="post__text"
+        >
+          Design tips for designers that cover everything you need
+        </h4>
+      </div>
+    </a>
+    <a
+      class="section__link"
+      href="/posts/3"
+    >
+      <div
+        class="post__container"
+      >
+        <span
+          class="post__authorInfo"
+        >
+          By 
+          <span>
+            Jenny Wilson
+          </span>
+           
+          Aug 23, 2024
+        </span>
+        <h4
+          class="post__text"
+        >
+          How to build rapport with your web design clients
+        </h4>
+      </div>
+    </a>
+    <a
+      class="section__link"
+      href="/posts/4"
+    >
+      <div
+        class="post__container"
+      >
+        <span
+          class="post__authorInfo"
+        >
+          By 
+          <span>
+            Leslie Alexander
+          </span>
+           
+          Aug 23, 2024
+        </span>
+        <h4
+          class="post__text"
+        >
+          Logo design trends to avoid in 2022
+        </h4>
+      </div>
+    </a>
+  </section>
+</div>
+`;

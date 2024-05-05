@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '@/widgets/BlogSection/ui/BlogFeaturedPost/BlogFeaturedPost.module.scss';
-import container from '@/shared/styles/container.module.scss';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { Inter } from 'next/font/google';
 import { POSTS } from '@/shared/constants/posts';
 import { Button } from '@/shared/ui/Button';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import container from '@/shared/styles/container.module.scss';
+import styles from '@/widgets/BlogSection/ui/BlogFeaturedPost/BlogFeaturedPost.module.scss';
 
 const inter = Inter({
   subsets: ['latin'],

@@ -1,16 +1,8 @@
 import React from 'react';
-import styles from '@/widgets/NavigationBar/ui/NavigationBar.module.scss';
-import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-
-export type NavigationLinksType = {
-  text: string;
-  link: string;
-};
-
-export type NavigationBarPropsType = {
-  navigationLinks: NavigationLinksType[];
-};
+import { useTranslations } from 'next-intl';
+import { NavigationBarPropsType } from '@/shared/types';
+import styles from '@/widgets/NavigationBar/ui/NavigationBar.module.scss';
 
 export function NavigationBar({ navigationLinks }: NavigationBarPropsType) {
   const t = useTranslations('NavigationBar');
@@ -19,7 +11,7 @@ export function NavigationBar({ navigationLinks }: NavigationBarPropsType) {
     <ul className={styles.navigation}>
       {navigationLinks.map(({ text, link }) => (
         <li className={styles.navigation__item} key={text}>
-          <Link key={text} href={link}>
+          <Link key={text} href={link} data-testid={`${text.toLowerCase()}-header-link`}>
             {t(`${text}`)}
           </Link>
         </li>

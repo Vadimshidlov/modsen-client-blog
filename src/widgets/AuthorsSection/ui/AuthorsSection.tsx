@@ -1,18 +1,15 @@
 import React from 'react';
-import styles from '@/widgets/AuthorsSection/ui/AuthorsSection.module.scss';
 import { AUTHORS_LIST } from '@/shared/constants/authors';
 import { Author } from '@/widgets/AuthorsSection/ui/Author';
-import container from '@/shared/styles/container.module.scss';
 import { useTranslations } from 'next-intl';
+import { AuthorsSectionPropsType } from '@/shared/types';
+import container from '@/shared/styles/container.module.scss';
+import styles from '@/widgets/AuthorsSection/ui/AuthorsSection.module.scss';
 
-export type AuthorsSectionPropsType = {
-  isShortVerison?: boolean;
-};
-
-export function AuthorsSection({ isShortVerison = true }: AuthorsSectionPropsType) {
+export function AuthorsSection({ isShortVersion = true }: AuthorsSectionPropsType) {
   const t = useTranslations('AuthorsSection');
 
-  const authorsList = isShortVerison ? AUTHORS_LIST.slice(0, 4) : AUTHORS_LIST;
+  const authorsList = isShortVersion ? AUTHORS_LIST.slice(0, 4) : AUTHORS_LIST;
 
   return (
     <section className={`${styles.authorsSection} ${container.container}`}>

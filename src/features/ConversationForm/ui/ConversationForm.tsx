@@ -30,7 +30,7 @@ export function ConversationForm() {
   const t = useTranslations('ConversationForm');
   const formRef = useRef<HTMLFormElement>(null);
 
-  useEffect(() => emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string), []);
+  useEffect(() => emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!), []);
 
   const sendForm = (
     data: FormikValues,
@@ -71,13 +71,15 @@ export function ConversationForm() {
       onSubmit={sendForm}
     >
       {({ isSubmitting }) => (
-        <Form className={styles.conversationForm} ref={formRef}>
+        <Form className={styles.conversationForm} ref={formRef} data-testid="conversation-form">
           <label htmlFor="userName">
             <Field
               className={`${styles.textInput} ${inter.variable}`}
               type="text"
+              id="userName"
               name="userName"
               placeholder={t('namePlaceholder')}
+              data-testid="userName-input"
             />
             <ErrorMessage className={styles.validationError} name="userName" component="div" />
           </label>
@@ -86,12 +88,19 @@ export function ConversationForm() {
               className={`${styles.textInput} ${inter.variable}`}
               type="email"
               name="email"
+              id="email"
               placeholder={t('emailPlaceholder')}
+              data-testid="email-input"
             />
             <ErrorMessage className={styles.validationError} name="email" component="div" />
           </label>
           <div className={styles.selectCategoryWrapper}>
-            <Field as="select" className={styles.selectCategory} name="query">
+            <Field
+              as="select"
+              className={styles.selectCategory}
+              name="query"
+              data-testid="conversation-select"
+            >
               {CATEGORIES.map(({ title }) => (
                 <option className="select__item" value={title} key={title}>
                   {title}
@@ -107,10 +116,16 @@ export function ConversationForm() {
               name="message"
               id="message"
               placeholder={t('messagePlaceholder')}
+              data-testid="message-input"
             />
             <ErrorMessage className={styles.validationError} name="message" component="div" />
           </label>
-          <Button isFormButton isSubmitting={isSubmitting} disabled={isSubmitting}>
+          <Button
+            isFormButton
+            isSubmitting={isSubmitting}
+            disabled={isSubmitting}
+            data-testid="conversation-submit-button"
+          >
             {isSubmitting ? 'Loading...' : `${t('buttonText')}`}
           </Button>
         </Form>

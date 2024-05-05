@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '@/widgets/LogosSection/ui/LogosSection.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import container from '@/shared/styles/container.module.scss';
-import { LOGOS_LIST } from '@/widgets/LogosSection/constants/logos';
 import { useTranslations } from 'next-intl';
+import { LOGOS_LIST } from '@/widgets/LogosSection/constants/logos';
+import container from '@/shared/styles/container.module.scss';
+import styles from '@/widgets/LogosSection/ui/LogosSection.module.scss';
 
 export function LogosSection() {
   const t = useTranslations('LogosSection');

@@ -1,8 +1,12 @@
-import postImage1 from '@/shared/assets/posts/stepByStepPost.png';
-import postImage2 from '@/shared/assets/posts/designTipsPost.png';
-import postImage3 from '@/shared/assets/posts/rapportPost.png';
-import postImage4 from '@/shared/assets/posts/logoDesingPost.png';
-import postImage5 from '@/shared/assets/posts/figmaDesignPost.jpg';
+import postImage1 from '@/shared/assets/posts/stepByStepPost.webp';
+import postImage2 from '@/shared/assets/posts/designTipsPost.webp';
+import postImage3 from '@/shared/assets/posts/rapportPost.webp';
+import postImage4 from '@/shared/assets/posts/logoDesignPost.webp';
+import postImage5 from '@/shared/assets/posts/figmaDesignPost.webp';
+import postImage6 from '@/shared/assets/posts/fontSizesPost.webp';
+import postImage7 from '@/shared/assets/posts/tiktokPost.webp';
+import postImage8 from '@/shared/assets/posts/copilotPost.webp';
+import postImage9 from '@/shared/assets/posts/aiGadgetPost.webp';
 
 import startupCategoryIcon from '@/shared/assets/categories/startup-icon.svg';
 import economyCategoryIcon from '@/shared/assets/categories/economy-icon.svg';
@@ -67,7 +71,7 @@ export const POSTS = [
   },
   {
     id: 6,
-    img: postImage2,
+    img: postImage6,
     title: 'Font sizes in UI design: The complete guide to follow',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
     postDate: 'Sep 25, 2024',
@@ -78,7 +82,7 @@ export const POSTS = [
   },
   {
     id: 7,
-    img: postImage2,
+    img: postImage7,
     title: 'TikTok pulls feature from Lite app in EU over addiction concerns: ',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
     postDate: 'Jun 25, 2024',
@@ -89,7 +93,7 @@ export const POSTS = [
   },
   {
     id: 8,
-    img: postImage3,
+    img: postImage8,
     title:
       'Eric Schmidt-backed Augment, a GitHub Copilot rival, launches out of stealth with $252M: ',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -101,7 +105,7 @@ export const POSTS = [
   },
   {
     id: 9,
-    img: postImage4,
+    img: postImage9,
     title: 'Rabbit’s R1 is a little AI gadget that grows on you: ',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
     postDate: 'July 20, 2024',

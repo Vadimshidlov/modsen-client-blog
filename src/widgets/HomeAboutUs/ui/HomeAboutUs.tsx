@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '@/widgets/HomeAboutUs/ui/HomeAboutUs.module.scss';
-import container from '@/shared/styles/container.module.scss';
 import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import { useTranslations } from 'next-intl';
+import container from '@/shared/styles/container.module.scss';
+import styles from '@/widgets/HomeAboutUs/ui/HomeAboutUs.module.scss';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,7 +28,7 @@ export function HomeAboutUs() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
           </span>
-          <Link href="/">
+          <Link href="/about">
             <span className={styles.aboutButton}>{t('buttonText')} &gt;</span>
           </Link>
         </article>

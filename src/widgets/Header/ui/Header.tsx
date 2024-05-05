@@ -2,16 +2,16 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import styles from '@/widgets/Header/ui/Header.module.scss';
 import { NavigationBar } from '@/widgets/NavigationBar';
 import { NAVIGATION_LINKS_SHORT } from '@/shared/constants/navigationBar';
 import { AppTitle } from '@/shared/ui/AppTitle';
 import { BlurBackground } from '@/widgets/Header/ui/BlurBackground';
-import burgerMenuButtonSrc from '@/widgets/Header/assets/burger-menu-button-light.svg';
-import closeBurgerMenuIcon from '@/widgets/Header/assets/close-button-svgrepo-com.svg';
 import { ModalWindow } from '@/shared/ui/ModalWindow/ModalWindow';
 import { useTranslations } from 'next-intl';
 import { LocaleSwitcher } from '@/widgets/Header/ui/LocaleSwitcher/LocaleSwitcher';
+import burgerMenuButtonSrc from '@/widgets/Header/assets/burger-menu-button-light.svg';
+import closeBurgerMenuIcon from '@/widgets/Header/assets/close-button-svgrepo-com.svg';
+import styles from '@/widgets/Header/ui/Header.module.scss';
 
 export function Header() {
   const t = useTranslations('Header');
@@ -35,7 +35,12 @@ export function Header() {
         className={`${styles.header__navigation__container} ${isBurgerOpen ? `${styles.burgerActive}` : ''}`}
       >
         <NavigationBar navigationLinks={NAVIGATION_LINKS_SHORT} />
-        <button type="button" className={styles.video__frame} onClick={handleToggleOpenModal}>
+        <button
+          type="button"
+          className={styles.video__frame}
+          onClick={handleToggleOpenModal}
+          data-testid="modal-video-button"
+        >
           {t('videoButton')}
         </button>
         <LocaleSwitcher />
@@ -59,9 +64,9 @@ export function Header() {
         <iframe
           className={styles.videoContainer}
           title="video"
-          // allow="autoplay;"
+          src="https://www.youtube.com/embed/vDkjDmnjKC0"
           allowFullScreen
-          src="https://www.youtube.com/embed/vDkjDmnjKC0?autoplay=1"
+          data-testid="video-frame"
         />
       </ModalWindow>
     </header>

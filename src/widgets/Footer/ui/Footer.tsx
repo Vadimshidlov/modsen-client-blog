@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '@/widgets/Footer/ui/Footer.module.scss';
 import { NavigationBar } from '@/widgets/NavigationBar';
 import { NAVIGATION_LINKS } from '@/shared/constants/navigationBar';
 import { AppTitle } from '@/shared/ui/AppTitle';
 import { SOCIALS } from '@/shared/constants/socials';
 import { LettersForm } from '@/features/LettersForm';
+import styles from '@/widgets/Footer/ui/Footer.module.scss';
 
 export function Footer() {
   return (

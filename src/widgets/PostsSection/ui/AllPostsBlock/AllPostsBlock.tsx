@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '@/widgets/PostsSection/ui/AllPostsBlock/AllPostsBlock.module.scss';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { PostItem } from '@/widgets/PostsSection/ui/PostItem/PostItem';
 import { POSTS } from '@/shared/constants/posts';
-import { useTranslations } from 'next-intl';
+import styles from '@/widgets/PostsSection/ui/AllPostsBlock/AllPostsBlock.module.scss';
 
 export function AllPostsBlock() {
   const t = useTranslations('AllPostsBlock');

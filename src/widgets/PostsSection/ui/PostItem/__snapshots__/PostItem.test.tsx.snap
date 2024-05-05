@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostItem tests should matches snapshot 1`] = `
+<div>
+  <div
+    class="post__container"
+  >
+    <span
+      class="post__authorInfo"
+    >
+      By 
+      <span>
+        John Doe
+      </span>
+       
+      26 May, 2023
+    </span>
+    <h4
+      class="post__text"
+    >
+      Post Text
+    </h4>
+  </div>
+</div>
+`;
