@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '@/widgets/CategoriesSection/ui/Categories/Categories.module.scss';
-import { CATEGORIES } from '@/shared/constants/categories';
 import { useTranslations } from 'next-intl';
+import { CATEGORIES } from '@/shared/constants/categories';
+import styles from '@/widgets/CategoriesSection/ui/Categories/Categories.module.scss';
 
 export function Categories() {
   const t = useTranslations('Category');

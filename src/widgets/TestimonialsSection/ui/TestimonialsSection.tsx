@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import styles from '@/widgets/TestimonialsSection/ui/TestimonialsSection.module.scss';
-import container from '@/shared/styles/container.module.scss';
 import { Inter } from 'next/font/google';
 import { useTranslations } from 'next-intl';
 import { FeedBackSwiper } from '@/widgets/TestimonialsSection/ui/FeedBackSwiper';
+import container from '@/shared/styles/container.module.scss';
+import styles from '@/widgets/TestimonialsSection/ui/TestimonialsSection.module.scss';
 
 const inter = Inter({
   subsets: ['latin'],

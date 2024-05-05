@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '@/widgets/PostsSection/ui/FeaturedPostBlock/FeaturedPostBlock.module.scss';
 import Image from 'next/image';
-import { Button } from '@/shared/ui/Button/Button';
-import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { Button } from '@/shared/ui/Button/Button';
 import { POSTS } from '@/shared/constants/posts';
+import { useTranslations } from 'next-intl';
+import styles from '@/widgets/PostsSection/ui/FeaturedPostBlock/FeaturedPostBlock.module.scss';
 
 export function FeaturedPostBlock() {
   const t = useTranslations('FeaturedPostBlock');

@@ -1,12 +1,12 @@
 'use client';
 
 import React, { ChangeEvent, useMemo, useState } from 'react';
-import styles from '@/widgets/CategoriesSection/ui/CategoriesSearchBar/CategoriesSearchBar.module.scss';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { useDebounce } from '@/shared/utils';
 import { Button } from '@/shared/ui/Button';
 import { POSTS } from '@/shared/constants/posts';
-import Link from 'next/link';
-import { useDebounce } from '@/shared/utils';
-import { useTranslations } from 'next-intl';
+import styles from '@/widgets/CategoriesSection/ui/CategoriesSearchBar/CategoriesSearchBar.module.scss';
 
 export function CategoriesSearchBar() {
   const t = useTranslations('CategoriesSearchBar');

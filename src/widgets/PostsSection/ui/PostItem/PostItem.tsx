@@ -1,13 +1,8 @@
 import React from 'react';
 import styles from '@/widgets/PostsSection/ui/PostItem/PostItem.module.scss';
+import { PostItemProps } from '@/shared/types';
 
-export type PostItemPropsType = {
-  authorName: string;
-  postDate: string;
-  postText: string;
-};
-
-export function PostItem({ postText, postDate, authorName }: PostItemPropsType) {
+export function PostItem({ postText, postDate, authorName }: PostItemProps) {
   return (
     <div className={styles.post__container}>
       <span className={styles.post__authorInfo}>

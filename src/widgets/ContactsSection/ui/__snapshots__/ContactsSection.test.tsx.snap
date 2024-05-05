@@ -82,6 +82,7 @@ exports[`ChooseCategorySection tests should matches snapshot 1`] = `
         <input
           class="textInput variable"
           data-testid="userName-input"
+          id="userName"
           name="userName"
           placeholder="Mocked namePlaceholder"
           type="text"
@@ -94,6 +95,7 @@ exports[`ChooseCategorySection tests should matches snapshot 1`] = `
         <input
           class="textInput variable"
           data-testid="email-input"
+          id="email"
           name="email"
           placeholder="Mocked emailPlaceholder"
           type="email"

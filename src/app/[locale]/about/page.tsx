@@ -6,7 +6,7 @@ export default function AboutUs() {
   return (
     <main>
       <AboutUsSection />
-      <AuthorsSection isShortVerison={false} />
+      <AuthorsSection isShortVersion={false} />
       <JoinTeamSection />
     </main>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '@/widgets/PrivacySection/ui/PrivacySection.module.scss';
 import { Inter } from 'next/font/google';
 import { useTranslations } from 'next-intl';
+import styles from '@/widgets/PrivacySection/ui/PrivacySection.module.scss';
 
 const inter = Inter({
   subsets: ['latin'],

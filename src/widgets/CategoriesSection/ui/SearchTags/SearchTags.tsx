@@ -2,11 +2,7 @@ import React from 'react';
 import styles from '@/widgets/CategoriesSection/ui/SearchTags/SearchTags.module.scss';
 import { SEARCH_TAGS } from '@/widgets/CategoriesSection/constants/constants';
 import { useTranslations } from 'next-intl';
-
-export type SearchTagsPropsTypes = {
-  selectTags: string[];
-  setSelectTags: React.Dispatch<React.SetStateAction<string[]>>;
-};
+import { SearchTagsPropsTypes } from '@/shared/types';
 
 export function SearchTags({ selectTags, setSelectTags }: SearchTagsPropsTypes) {
   const t = useTranslations('SearchTags');

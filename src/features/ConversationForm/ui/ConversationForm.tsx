@@ -76,6 +76,7 @@ export function ConversationForm() {
             <Field
               className={`${styles.textInput} ${inter.variable}`}
               type="text"
+              id="userName"
               name="userName"
               placeholder={t('namePlaceholder')}
               data-testid="userName-input"
@@ -87,6 +88,7 @@ export function ConversationForm() {
               className={`${styles.textInput} ${inter.variable}`}
               type="email"
               name="email"
+              id="email"
               placeholder={t('emailPlaceholder')}
               data-testid="email-input"
             />

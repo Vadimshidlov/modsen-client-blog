@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '@/widgets/ChooseCategorySection/ui/ChooseCategorySection.module.scss';
+import { useTranslations } from 'next-intl';
 import { CATEGORIES } from '@/shared/constants/categories';
 import { Category } from '@/widgets/ChooseCategorySection/ui/Category';
 import container from '@/shared/styles/container.module.scss';
-import { useTranslations } from 'next-intl';
+import styles from '@/widgets/ChooseCategorySection/ui/ChooseCategorySection.module.scss';
 
 export function ChooseCategorySection() {
   const t = useTranslations('ChooseCategorySection');

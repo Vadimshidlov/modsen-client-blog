@@ -1,13 +1,8 @@
 import React from 'react';
-import { StaticImageData } from 'next/image';
-import styles from '@/widgets/AuthorSection/ui/AuthorSection.module.scss';
 import { AuthorOverview } from '@/widgets/AuthorSection/ui/AuthorOverview';
 import { AuthorPosts } from '@/widgets/AuthorSection/ui/AuthorPosts';
-
-export type AuthorSectionPropsType = {
-  img: string | StaticImageData;
-  name: string;
-};
+import styles from '@/widgets/AuthorSection/ui/AuthorSection.module.scss';
+import { AuthorSectionPropsType } from '@/shared/types';
 
 export function AuthorSection({ name, img }: AuthorSectionPropsType) {
   return (

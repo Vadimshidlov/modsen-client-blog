@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { POSTS } from '@/shared/constants/posts';
-import styles from '@/widgets/BlogPostItem/BlogPostItem.module.scss';
 import { AuthorTitleCard } from '@/shared/ui/AuthorTitleCard';
 import { AUTHORS_LIST } from '@/shared/constants/authors';
+import styles from '@/widgets/BlogPostItem/BlogPostItem.module.scss';
 
 export function BlogPostItem({ postId }: { postId: number }) {
   const selectedPostData = POSTS.filter((postData) => postData.id === postId)[0];

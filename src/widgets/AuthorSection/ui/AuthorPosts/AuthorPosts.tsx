@@ -1,12 +1,9 @@
 import React from 'react';
-import styles from '@/widgets/AuthorSection/ui/AuthorPosts/AuthorPosts.module.scss';
 import { POSTS } from '@/shared/constants/posts';
 import { PostItem } from '@/widgets/PostItem';
 import { useTranslations } from 'next-intl';
-
-export type AuthorPostsPropsType = {
-  authorName: string;
-};
+import { AuthorPostsPropsType } from '@/shared/types';
+import styles from '@/widgets/AuthorSection/ui/AuthorPosts/AuthorPosts.module.scss';
 
 export function AuthorPosts({ authorName }: AuthorPostsPropsType) {
   const t = useTranslations('AuthorPosts');

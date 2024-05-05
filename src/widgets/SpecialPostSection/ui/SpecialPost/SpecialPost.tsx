@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '@/widgets/SpecialPostSection/ui/SpecialPost/SpecialPost.module.scss';
-import { Inter } from 'next/font/google';
-import { Button } from '@/shared/ui/Button';
 import Link from 'next/link';
+import { Inter } from 'next/font/google';
 import { useTranslations } from 'next-intl';
+import { Button } from '@/shared/ui/Button';
+import styles from '@/widgets/SpecialPostSection/ui/SpecialPost/SpecialPost.module.scss';
 
 const inter = Inter({
   subsets: ['latin'],

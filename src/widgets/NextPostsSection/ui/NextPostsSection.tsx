@@ -1,12 +1,9 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import styles from '@/widgets/NextPostsSection/ui/NextPostsSection.module.scss';
 import { POSTS } from '@/shared/constants/posts';
 import { NextPostItem } from '@/widgets/NextPostsSection/ui/NextPostItem';
-import { useTranslations } from 'next-intl';
-
-export type NextPostsSectionPropsType = {
-  activePostId: number;
-};
+import { NextPostsSectionPropsType } from '@/shared/types';
 
 export function NextPostsSection({ activePostId }: NextPostsSectionPropsType) {
   const t = useTranslations('NextPostsSection');

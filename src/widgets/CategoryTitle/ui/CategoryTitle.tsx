@@ -3,16 +3,13 @@ import styles from '@/widgets/CategoryTitle/ui/CategoryTitle.module.scss';
 import { Inter } from 'next/font/google';
 import { getCapitalizeWord } from '@/shared/utils';
 import { useTranslations } from 'next-intl';
+import { CategoryTitlePropsType } from '@/shared/types';
 
 const inter = Inter({
   subsets: ['latin'],
   weight: '600',
   variable: '--font-inter',
 });
-
-export type CategoryTitlePropsType = {
-  categoryName: string;
-};
 
 export function CategoryTitle({ categoryName }: CategoryTitlePropsType) {
   const t = useTranslations('Category');

@@ -1,16 +1,9 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
-import styles from '@/widgets/AuthorsSection/ui/Author/Author.module.scss';
+import Image from 'next/image';
 import Link from 'next/link';
 import { SOCIALS } from '@/shared/constants/socials';
-
-export type AuthorPropsType = {
-  avatarSrc: string | StaticImageData;
-  name: string;
-  id: number;
-  job: string;
-  company: string;
-};
+import { AuthorPropsType } from '@/shared/types';
+import styles from '@/widgets/AuthorsSection/ui/Author/Author.module.scss';
 
 export function Author({ id, avatarSrc, name, job, company }: AuthorPropsType) {
   return (

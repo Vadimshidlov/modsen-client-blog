@@ -9,10 +9,7 @@ import { PostItem } from '@/widgets/PostItem';
 import { Categories } from '@/widgets/CategoriesSection/ui/Categories';
 import { SearchTags } from '@/widgets/CategoriesSection/ui/SearchTags';
 import { useTranslations } from 'next-intl';
-
-export type CategoriesSectionPropsType = {
-  selectedCategory: string;
-};
+import { CategoriesSectionPropsType } from '@/shared/types';
 
 export function CategoriesSection({ selectedCategory }: CategoriesSectionPropsType) {
   const t = useTranslations('CategoriesSection');

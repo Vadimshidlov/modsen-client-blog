@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { FEEDBACK_ITEMS } from '@/widgets/TestimonialsSection/constants/feedback';
 import { AuthorTitleCard } from '@/shared/ui/AuthorTitleCard';
-import Image from 'next/image';
 import leftButtonSrc from '@/widgets/TestimonialsSection/assets/leftArrow.svg';
 import rightButtonSrc from '@/widgets/TestimonialsSection/assets/rightArrow.svg';
 import styles from '@/widgets/TestimonialsSection/ui/TestimonialsSection.module.scss';
