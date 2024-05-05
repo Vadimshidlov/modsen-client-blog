@@ -28,7 +28,8 @@
       ]
     },
     "types": [
-      "@types/jest"
+      "@types/jest",
+      "./cypress/support"
     ]
   },
   "baseUrl": ".",
@@ -38,10 +39,12 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".eslintrc.json",
-    "./cypress.config.ts"
+    "./cypress.config.ts",
+    "cypress/support"
   ],
   "exclude": [
     "./cypress.config.ts",
+//    "cypress",
     "node_modules"
   ]
 }

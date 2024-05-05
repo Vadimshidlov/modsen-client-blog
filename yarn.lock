@@ -2887,6 +2887,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/cypress@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@types/cypress/-/cypress-1.1.3.tgz#0a700c040d53e9e12b5af98e41d4a88c39f39b6a"
+  integrity sha512-OXe0Gw8LeCflkG1oPgFpyrYWJmEKqYncBsD/J0r17r0ETx/TnIGDNLwXt/pFYSYuYTpzcq1q3g62M9DrfsBL4g==
+  dependencies:
+    cypress "*"
+
 "@types/detect-port@^1.3.0":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@types/detect-port/-/detect-port-1.3.5.tgz#deecde143245989dee0e82115f3caba5ee0ea747"
@@ -5045,7 +5052,7 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
-cypress@^13.8.1:
+cypress@*, cypress@^13.8.1:
   version "13.8.1"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-13.8.1.tgz#f558e51b770a409e2360031bbd36c3f4fb3f2db4"
   integrity sha512-Uk6ovhRbTg6FmXjeZW/TkbRM07KPtvM5gah1BIMp4Y2s+i/NMxgaLw0+PbYTOdw1+egE0FP3mWRiGcRkjjmhzA==

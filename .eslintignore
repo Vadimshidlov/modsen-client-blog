@@ -1,11 +1,12 @@
 .eslintrc.js
 jest.navigation.ts
 assetsTransformer.js
-global.d.ts
+cypress.d.ts
 src/__mocks__
 src/__mocks__/svgrMock.ts
 cypress.navigation.ts
 babel.config.js
 next.config.mjs
 cypress.config.ts
+/cypress
 

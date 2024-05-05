@@ -4,7 +4,7 @@ Cypress.on('uncaught:exception', () => false);
 
 describe('privacy page tests', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/en/privacy');
+    cy.visit('/privacy');
   });
 
   it('should include valid routes', () => {

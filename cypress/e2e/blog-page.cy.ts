@@ -4,7 +4,7 @@ Cypress.on('uncaught:exception', () => false);
 
 describe('blog page tests', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/en');
+    cy.visit('/');
   });
 
   it('should include valid routes', () => {
@@ -18,12 +18,12 @@ describe('blog page tests', () => {
   it('should handle page change', () => {
     cy.url().should('include', '/en');
 
-    cy.get('[data-testid="blog-header-link"]').eq(1).click();
+    cy.getByTestId('blog-header-link').eq(1).click();
 
-    cy.get('[data-testid="nextButton"]').click();
-    cy.get('[data-testid="nextButton"]').should('be.disabled');
+    cy.getByTestId('nextButton').click();
+    cy.getByTestId('nextButton').should('be.disabled');
 
-    cy.get('[data-testid="prevButton"]').click();
-    cy.get('[data-testid="prevButton"]').should('be.disabled');
+    cy.getByTestId('prevButton').click();
+    cy.getByTestId('prevButton').should('be.disabled');
   });
 });

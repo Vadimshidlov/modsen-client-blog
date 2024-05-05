@@ -25,7 +25,7 @@ export function ModalWindow({ isOpen, handleToggleModal, children }: ModalWindow
 
   return (
     <div className={styles.modalContainer}>
-      <div className={styles.modalContent}>
+      <div className={styles.modalContent} ref={modalRef}>
         {children}
         <button className={styles.modalCloseButton} onClick={handleCloseModal}>
           <Image

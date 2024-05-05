@@ -4,7 +4,7 @@ Cypress.on('uncaught:exception', () => false);
 
 describe('contacts page tests', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/en/contacts');
+    cy.visit('/contacts');
   });
 
   it('should include valid routes', () => {
@@ -12,24 +12,24 @@ describe('contacts page tests', () => {
   });
 
   it('should correct render conversation form', () => {
-    cy.get('[data-testid="conversation-form"]').should('exist');
+    cy.getByTestId('conversation-form').should('exist');
   });
 
   it('should correct render conversation map', () => {
-    cy.get('[data-testid="conversation-map"]').should('exist');
+    cy.getByTestId('conversation-map').should('exist');
     cy.get('.mapboxgl-marker.mapboxgl-marker-anchor-center').should('exist');
   });
 
   it('should correct validate form inputs', () => {
     cy.scrollTo('bottom');
 
-    cy.get('[data-testid="userName-input"]').click();
+    cy.getByTestId('userName-input').click();
 
-    cy.get('[data-testid="email-input"]').click();
+    cy.getByTestId('email-input').click();
 
-    cy.get('[data-testid="message-input"]').click();
+    cy.getByTestId('message-input').click();
 
-    cy.get('[data-testid="conversation-select"]').select('Startup');
+    cy.getByTestId('conversation-select').select('Startup');
 
     cy.contains('Name is required!').should('be.visible');
 
@@ -37,11 +37,11 @@ describe('contacts page tests', () => {
 
     cy.contains('Message is required!').should('be.visible');
 
-    cy.get('[data-testid="userName-input"]').type('John');
+    cy.getByTestId('userName-input').type('John');
 
-    cy.get('[data-testid="email-input"]').type('john-doe@gmail.com');
+    cy.getByTestId('email-input').type('john-doe@gmail.com');
 
-    cy.get('[data-testid="message-input"]').type('Hello! It is Message from John Doe!');
+    cy.getByTestId('message-input').type('Hello! It is Message from John Doe!');
 
     cy.contains('Name is required!').should('not.exist');
 
