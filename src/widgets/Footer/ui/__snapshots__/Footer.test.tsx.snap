@@ -11,7 +11,11 @@ exports[`ChooseCategorySection tests should matches snapshot 1`] = `
       <h1
         class="app__title"
       >
-        Mocked appTitle
+        <a
+          href="/"
+        >
+          Mocked appTitle
+        </a>
       </h1>
       <ul
         class="navigation"
