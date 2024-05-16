@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutUsStartedBlock tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="aboutUsStartedSection"
+  >
+    <div
+      class="articleWrapper"
+    >
+      <article
+        class="aboutUsTextContent"
+      >
+        <h2
+          class="aboutUsTeamTitle"
+        >
+          Mocked title
+        </h2>
+        <h4
+          class="aboutUsTeamSubtitle"
+        >
+          Mocked subTitle
+        </h4>
+        <span
+          class="aboutUsText"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+  reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+        </span>
+      </article>
+    </div>
+    <div
+      class="aboutUsStartedImageWrapper"
+    >
+      <img
+        alt="author-avatar"
+        class="aboutUsStartedImage"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+        width="40"
+      />
+    </div>
+  </section>
+</div>
+`;

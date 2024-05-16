@@ -1,0 +1,115 @@
+.conversationForm {
+  max-width: 768px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-bottom: 70px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 15px;
+  }
+
+  .textInput {
+    padding: 24px;
+    width: 100%;
+    font-size: $fz16;
+    font-weight: $regular;
+    line-height: 28px;
+    border: 1px solid $grey;
+
+    &:focus {
+      outline: $yellow solid 2px;
+    }
+
+    &::placeholder {
+      color: inherit;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 12px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 6px;
+    }
+  }
+
+  .conversationMessage {
+    min-height: 144px;
+    resize: none;
+
+    &::placeholder {
+      color: inherit;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 12px;
+      min-height: 100px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 6px;
+      min-height: 80px;
+    }
+  }
+
+  .selectCategoryWrapper {
+    position: relative;
+
+    .selectCategory {
+      min-height: 53px;
+      padding: 24px;
+      width: 100%;
+      font-size: $fz16;
+      font-weight: $regular;
+      line-height: 28px;
+      border: 1px solid $grey;
+      appearance: none;
+      cursor: pointer;
+
+      &::placeholder {
+        color: inherit;
+      }
+
+      &:focus {
+        outline: $yellow solid 2px;
+      }
+
+      @media (max-width: $tablet) {
+        padding: 12px;
+      }
+
+      @media (max-width: $mobile) {
+        padding: 6px;
+        min-height: 41px;
+      }
+    }
+
+    .selectIcon {
+      position: absolute;
+      top: 50%;
+      right: 63px;
+      transform: translateY(-50%);
+
+      @media (max-width: $tablet) {
+        right: 43px;
+      }
+
+      @media (max-width: $mobile) {
+        right: 23px;
+      }
+    }
+  }
+
+  .validationError {
+    font-size: $fz14;
+    color: $red;
+    padding-top: 5px;
+    text-align: center;
+  }
+}

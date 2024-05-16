@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpecialPost tests should matches snapshot 1`] = `
+<div>
+  <article
+    class="contentBlock"
+  >
+    <h3
+      class="postSubTitle variable"
+    >
+      Mocked title
+    </h3>
+    <h2
+      class="postTitle"
+    >
+      Mocked postTitle
+    </h2>
+    <span
+      class="postText"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    </span>
+    <button
+      class="button"
+      type="button"
+    >
+      <a
+        href="/about"
+      >
+        Mocked buttonText
+         &gt;
+      </a>
+    </button>
+  </article>
+</div>
+`;

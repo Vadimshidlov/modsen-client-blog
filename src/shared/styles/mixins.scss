@@ -1,0 +1,59 @@
+@mixin headingOne {
+  font-size: $fz48;
+  font-weight: $bold;
+  line-height: 64px;
+}
+
+@mixin headingTwo {
+  font-size: $fz36;
+  font-weight: $bold;
+  line-height: 48px;
+}
+
+@mixin headingThree {
+  font-size: $fz28;
+  font-weight: $bold;
+  line-height: 36px;
+}
+
+@mixin headingFour {
+  font-size: $fz24;
+  font-weight: $bold;
+  line-height: 32px;
+}
+
+@mixin headingFive {
+  font-size: $fz20;
+  font-weight: $bold;
+  line-height: 32px;
+}
+
+@mixin headingSix {
+  font-size: $fz16;
+  font-weight: $bold;
+  line-height: 24px;
+}
+
+@mixin headingSeven {
+  font-size: $fz14;
+  font-weight: $regular;
+  line-height: 20px;
+}
+
+@mixin bodyOne {
+  font-size: $fz16;
+  font-weight: $regular;
+  line-height: 28px;
+}
+
+@mixin labelOne {
+  font-size: $fz14;
+  font-weight: $medium;
+  line-height: 20px;
+}
+
+@mixin display {
+  font-size: $fz56;
+  font-weight: $bold;
+  line-height: 64px;
+}

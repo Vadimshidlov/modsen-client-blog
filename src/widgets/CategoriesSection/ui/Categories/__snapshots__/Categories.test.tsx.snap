@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories tests should matches snapshot 1`] = `
+<div>
+  <div
+    class="categoriesContainer"
+  >
+    <h2
+      class="categoriesTitle"
+    >
+      Mocked title
+    </h2>
+    <ul
+      class="categoriesListContainer"
+    >
+      <a
+        href="/category/business"
+      >
+        <li
+          class="categoriesItem"
+        >
+          <img
+            alt="owerview-image"
+            class="categoriesItemImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <span
+            class="categoriesItemTitle"
+          >
+            Mocked Business
+          </span>
+        </li>
+      </a>
+      <a
+        href="/category/startup"
+      >
+        <li
+          class="categoriesItem"
+        >
+          <img
+            alt="owerview-image"
+            class="categoriesItemImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <span
+            class="categoriesItemTitle"
+          >
+            Mocked Startup
+          </span>
+        </li>
+      </a>
+      <a
+        href="/category/economy"
+      >
+        <li
+          class="categoriesItem"
+        >
+          <img
+            alt="owerview-image"
+            class="categoriesItemImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <span
+            class="categoriesItemTitle"
+          >
+            Mocked Economy
+          </span>
+        </li>
+      </a>
+      <a
+        href="/category/technology"
+      >
+        <li
+          class="categoriesItem"
+        >
+          <img
+            alt="owerview-image"
+            class="categoriesItemImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <span
+            class="categoriesItemTitle"
+          >
+            Mocked Technology
+          </span>
+        </li>
+      </a>
+    </ul>
+  </div>
+</div>
+`;

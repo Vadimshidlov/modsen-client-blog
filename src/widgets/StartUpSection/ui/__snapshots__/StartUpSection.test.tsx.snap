@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StartUpSection tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="section__container"
+  >
+    <img
+      alt="Mountains"
+      data-nimg="fill"
+      decoding="async"
+      loading="lazy"
+      sizes="100vw"
+      src="/_next/image?url=%2Fimg.jpg&w=3840&q=100"
+      srcset="/_next/image?url=%2Fimg.jpg&w=640&q=100 640w, /_next/image?url=%2Fimg.jpg&w=750&q=100 750w, /_next/image?url=%2Fimg.jpg&w=828&q=100 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=100 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=100 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=100 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=100 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=100 3840w"
+      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent; z-index: -1; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+    />
+    <div
+      class="content__container"
+    >
+      <h3
+        class="subtitle"
+      >
+        Mocked titleFirstPart
+         
+        <span>
+          Mocked titleSecondPart
+           
+        </span>
+      </h3>
+      <h1
+        class="title"
+      >
+        Step-by-step guide to choosing great font pairs
+      </h1>
+      <div
+        class="text__container"
+      >
+        <span
+          class="textTitle"
+        >
+          By 
+          <span>
+            Floyd Miles
+          </span>
+           |
+          May 23, 2024
+        </span>
+        <span
+          class="text"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </span>
+        <a
+          href="/posts/1"
+        >
+          <button
+            class="button"
+            type="button"
+          >
+            Mocked buttonText
+             &gt;
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+`;

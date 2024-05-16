@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestimonialsSection tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="testimotalsSection container"
+  >
+    <div
+      class="contentContainer"
+    >
+      <article
+        class="infoBlock"
+      >
+        <h3
+          class="variable infoSubTitle"
+        >
+          Mocked subTitle
+        </h3>
+        <h2
+          class="infoTitle"
+        >
+          Mocked title
+        </h2>
+        <span
+          class="infoText"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+        </span>
+      </article>
+      <div
+        class="contentSeparator"
+      />
+      <div
+        class="swiperWrapper"
+        data-testid="swiper-wrapper"
+      >
+        <article
+          class="messagesBlock"
+          data-testid="swiper-block"
+          style="transform: translateX(0%);"
+        >
+          <div
+            class="swiperItem"
+          >
+            <h3
+              class="messagesText"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+            </h3>
+            <div
+              class="authorInfoBlock"
+            >
+              <img
+                alt="author-avatar"
+                class="authorInfoAvatar"
+                data-nimg="1"
+                decoding="async"
+                height="40"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+                style="color: transparent;"
+                width="40"
+              />
+              <div
+                class="authorInfoText"
+              >
+                <a
+                  href="/authors/5"
+                >
+                  <span
+                    class="authorInfoName"
+                  >
+                    Jonathan Vallem
+                  </span>
+                </a>
+                <span
+                  class="authorInfoAddress"
+                >
+                  New york, USA
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiperItem"
+          >
+            <h3
+              class="messagesText"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+            </h3>
+            <div
+              class="authorInfoBlock"
+            >
+              <img
+                alt="author-avatar"
+                class="authorInfoAvatar"
+                data-nimg="1"
+                decoding="async"
+                height="40"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+                style="color: transparent;"
+                width="40"
+              />
+              <div
+                class="authorInfoText"
+              >
+                <a
+                  href="/authors/5"
+                >
+                  <span
+                    class="authorInfoName"
+                  >
+                    Dianne Russell
+                  </span>
+                </a>
+                <span
+                  class="authorInfoAddress"
+                >
+                  USA
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiperItem"
+          >
+            <h3
+              class="messagesText"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+            </h3>
+            <div
+              class="authorInfoBlock"
+            >
+              <img
+                alt="author-avatar"
+                class="authorInfoAvatar"
+                data-nimg="1"
+                decoding="async"
+                height="40"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+                style="color: transparent;"
+                width="40"
+              />
+              <div
+                class="authorInfoText"
+              >
+                <a
+                  href="/authors/5"
+                >
+                  <span
+                    class="authorInfoName"
+                  >
+                    Leslie Alexander
+                  </span>
+                </a>
+                <span
+                  class="authorInfoAddress"
+                >
+                  TEXAS
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        class="sliderController"
+      >
+        <button
+          class="sliderButton"
+          data-testid="swiper-left-button"
+        >
+          <img
+            alt="swiper-left-btn"
+            class="authorInfoAvatar"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </button>
+        <button
+          class="sliderButton"
+        >
+          <img
+            alt="swiper-right-btn"
+            class="authorInfoAvatar"
+            data-nimg="1"
+            data-testid="swiper-right-button"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+`;

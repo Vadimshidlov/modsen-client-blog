@@ -1,0 +1,48 @@
+.authorPostsSection {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto 128px;
+  padding-top: 128px;
+  max-width: 1024px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (max-width: $tablet) {
+    padding-top: 32px;
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 64px;
+    @include headingOne;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 32px;
+      @include headingThree;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 16px;
+      @include headingFour;
+    }
+  }
+
+  .authorPostsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+
+    @media (max-width: $tablet) {
+      row-gap: 32px;
+    }
+
+    @media (max-width: $mobile) {
+      row-gap: 16px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar tests should matches snapshot 1`] = `
+<div>
+  <ul
+    class="navigation"
+  >
+    <li
+      class="navigation__item"
+    >
+      <a
+        data-testid="home-header-link"
+        href="/"
+      >
+        Mocked Home
+      </a>
+    </li>
+    <li
+      class="navigation__item"
+    >
+      <a
+        data-testid="blog-header-link"
+        href="/blog"
+      >
+        Mocked Blog
+      </a>
+    </li>
+    <li
+      class="navigation__item"
+    >
+      <a
+        data-testid="about us-header-link"
+        href="/about"
+      >
+        Mocked About Us
+      </a>
+    </li>
+    <li
+      class="navigation__item"
+    >
+      <a
+        data-testid="contact us-header-link"
+        href="/"
+      >
+        Mocked Contact us
+      </a>
+    </li>
+    <li
+      class="navigation__item"
+    >
+      <a
+        data-testid="privacy policy-header-link"
+        href="/privacy"
+      >
+        Mocked Privacy Policy
+      </a>
+    </li>
+  </ul>
+</div>
+`;

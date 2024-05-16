@@ -1,0 +1,40 @@
+.allPosts__container {
+  @media (max-width: 1380px) {
+    width: 100%;
+  }
+
+  .allPostsHeader__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+
+    .section__title {
+      font-size: $fz36;
+      font-weight: $bold;
+      line-height: 48px;
+
+      @media (max-width: 768px) {
+        font-size: $fz28;
+      }
+
+      @media (max-width: 450px) {
+        font-size: $fz22;
+      }
+    }
+
+    .section__link {
+      font-size: $fz16;
+      font-weight: $regular;
+      line-height: 28px;
+    }
+  }
+}
+
+
+
+

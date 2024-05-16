@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeAboutUs test should matches snapshot 1`] = `
+<div>
+  <section
+    class="about__section container"
+  >
+    <div
+      class="colorBarContainer"
+    >
+      <div
+        class="firstColorBar"
+      />
+      <div
+        class="secondColorBar"
+      />
+    </div>
+    <div
+      class="contentContainer"
+    >
+      <article
+        class="aboutBlock"
+      >
+        <h4
+          class="aboutSubTitle variable"
+        >
+          Mocked subTitle
+        </h4>
+        <h2
+          class="aboutTitle"
+        >
+          Mocked title
+        </h2>
+        <span
+          class="aboutText"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </span>
+        <a
+          href="/about"
+        >
+          <span
+            class="aboutButton"
+          >
+            Mocked buttonText
+             &gt;
+          </span>
+        </a>
+      </article>
+      <article
+        class="missionBlock"
+      >
+        <h4
+          class="missionSubTitle variable"
+        >
+          Mocked missionSubTitle
+        </h4>
+        <h2
+          class="missionTitle"
+        >
+          Mocked missionTitle
+        </h2>
+        <span
+          class="missionText"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </span>
+      </article>
+    </div>
+  </section>
+</div>
+`;

@@ -1,0 +1,191 @@
+.testimotalsSection {
+  margin-bottom: 128px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 64px;
+  }
+
+  .contentContainer {
+    position: relative;
+    padding: 75px 80px 112px;
+    display: flex;
+    justify-content: center;
+    column-gap: 90px;
+    background: $lightYellow;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 35px 40px 56px;
+    }
+
+    .infoBlock {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .infoSubTitle {
+        margin-bottom: 12px;
+      }
+
+      .infoTitle {
+        max-width: 345px;
+        @include headingTwo;
+        margin-bottom: 16px;
+
+        @media (max-width: 900px) {
+          max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+          @include headingThree;
+        }
+
+        @media (max-width: 450px) {
+          @include headingFour;
+        }
+      }
+
+      .infoText {
+        display: block;
+        max-width: 350px;
+        @include bodyOne;
+      }
+    }
+
+    .contentSeparator {
+      width: 1px;
+      background: $grey;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .swiperWrapper {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+
+      .swiperItem {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+
+        @media (max-width: $tablet) {
+          padding-bottom: 20px;
+        }
+      }
+
+      .messagesBlock {
+        display: flex;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+
+        .swiperItem {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .messagesText {
+          @include headingFour;
+          max-width: 469px;
+          margin-bottom: 121px;
+
+          @media (max-width: 900px) {
+            margin-bottom: 50px;
+          }
+
+          @media (max-width: 768px) {
+            @include headingFive;
+            margin-bottom: 30px;
+          }
+
+          @media (max-width: 450px) {
+            @include headingSix;
+          }
+        }
+
+        .authorInfoBlock {
+          display: flex;
+          column-gap: 16px;
+          align-items: center;
+
+          .authorInfoAvatar {
+            width: 48px;
+            height: 48px;
+          }
+
+          .authorInfoText {
+            display: flex;
+            flex-direction: column;
+
+            .authorInfoName {
+              @include headingFour;
+
+              @media (max-width: 768px) {
+                @include headingFive;
+              }
+
+              @media (max-width: 768px) {
+                @include headingSix;
+              }
+            }
+
+            .authorInfoAddress {
+              @include bodyOne;
+            }
+          }
+        }
+      }
+    }
+
+    .sliderController {
+      position: absolute;
+      bottom: 120px;
+      right: 67px;
+      display: flex;
+      column-gap: 24px;
+
+      @media (max-width: 1300px) {
+        bottom: 31px;
+        transform: translateX(-50%);
+      }
+
+      @media (max-width: 768px) {
+        bottom: 13px;
+      }
+
+      .sliderButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: $white;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover {
+          background: $darkFiolet;
+          transform: scale(1.2);
+
+          img {
+            filter: brightness(0) invert(1);
+          }
+        }
+
+        @media (max-width: 768px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

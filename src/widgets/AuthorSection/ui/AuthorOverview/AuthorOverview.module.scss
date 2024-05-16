@@ -1,0 +1,99 @@
+.authorOverviewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 128px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: $lightPurple;
+
+  @media (max-width: $tablet) {
+    padding-top: 32px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 16px;
+  }
+
+  .authorOverviewContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 32px;
+    max-width: 1024px;
+    width: 100%;
+    margin-bottom: 104px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 52px;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    .authorOverviewImage {
+      width: 251px;
+      height: 294px;
+
+      @media (max-width: $tablet) {
+        align-self: center;
+      }
+    }
+
+    .authorOverviewDescription {
+      display: flex;
+      flex-direction: column;
+
+      .authorOverviewTitle {
+        @include headingOne;
+        max-width: 669px;
+        margin-bottom: 24px;
+
+        @media (max-width: $tablet) {
+          @include headingThree;
+        }
+
+        @media (max-width: $mobile) {
+          @include headingFour;
+        }
+      }
+
+      .authorOverviewText {
+        margin-bottom: 24px;
+        max-width: 645px;
+        font-size: $fz16;
+        font-weight: $regular;
+        line-height: 28px;
+      }
+
+      .authorOverviewSocials {
+        display: flex;
+        column-gap: 16px;
+
+        .authorOverviewSocialsItem {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+
+  .colorBarContainer {
+    max-width: 1024px;
+    height: 23px;
+    width: 100%;
+    display: flex;
+
+    .firstColorBar {
+      height: 23px;
+      max-width: 780px;
+      width: 100%;
+      background: $yellow;
+    }
+
+    .secondColorBar {
+      height: 23px;
+      max-width: 282px;
+      width: 100%;
+      background: $lightFiolet;
+    }
+  }
+}

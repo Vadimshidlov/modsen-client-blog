@@ -1,0 +1,50 @@
+.categoriesSection {
+  display: flex;
+  margin-bottom: 128px;
+  padding-top: 102px;
+  column-gap: 40px;
+  justify-content: space-between;
+
+  @media (max-width: 1250px) {
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 51px;
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 25px;
+    margin-bottom: 32px;
+  }
+
+  .postsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    max-width: 844px;
+
+    .postsNotFountTitle {
+      @include headingThree;
+
+      @media (max-width: $tablet) {
+        @include headingThree;
+      }
+
+      @media (max-width: $mobile) {
+        @include headingFive;
+      }
+    }
+  }
+
+  .searchBarWrapper {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1250px) {
+      max-width: 100%;
+    }
+  }
+}

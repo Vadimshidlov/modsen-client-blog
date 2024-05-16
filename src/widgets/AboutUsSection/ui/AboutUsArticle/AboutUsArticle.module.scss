@@ -1,0 +1,37 @@
+.aboutUsTextContent {
+  display: flex;
+  flex-direction: column;
+
+  .aboutUsTeamTitle {
+    margin-bottom: 16px;
+    @include headingTwo;
+
+    @media (max-width: $tablet) {
+      @include headingFour;
+    }
+
+    @media (max-width: $mobile) {
+      @include headingSix;
+    }
+  }
+
+  .aboutUsTeamSubtitle {
+    margin-bottom: 16px;
+    max-width: 520px;
+    @include headingFour;
+
+    @media (max-width: $tablet) {
+      @include headingSix;
+    }
+
+    @media (max-width: $mobile) {
+      @include headingSeven;
+      font-weight: $bold;
+    }
+  }
+
+  .aboutUsText {
+    max-width: 520px;
+    @include bodyOne;
+  }
+}

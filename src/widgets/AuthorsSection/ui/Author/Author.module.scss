@@ -1,0 +1,49 @@
+.authorsItem {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 28px;
+  background: $strongWhite;
+  transition: all .5s ease;
+  cursor: pointer;
+  width: 296px;
+
+  @media (max-width: 768px) {
+    padding: 20px 14px;
+  }
+
+  @media (max-width: 660px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background: $lightYellow;
+  }
+
+  .authorName {
+    @include headingThree;
+
+    @media (max-width: 768px) {
+      font-size: $fz24;
+    }
+
+    @media (max-width: 450px) {
+      font-size: $fz20;
+    }
+  }
+
+  .authorJobInfo {
+    @include headingSeven;
+    margin-bottom: 20px;
+  }
+
+  .authorSocial {
+    display: flex;
+    column-gap: 16px;
+  }
+
+  .authorsAvatar {
+    margin-bottom: 20px;
+  }
+}

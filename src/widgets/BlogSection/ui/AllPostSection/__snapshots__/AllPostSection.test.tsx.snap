@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllPostSection tests should matches snapshot 1`] = `
+<div>
+  <section
+    class="allPostSection container"
+  >
+    <h1
+      class="sectionTitle"
+    >
+      Mocked title
+    </h1>
+    <div
+      class="postsContainer"
+    >
+      <article
+        class="postContainer"
+      >
+        <div
+          class="postImageWrapper"
+        >
+          <img
+            alt="post-image"
+            class="postImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <div
+          class="postContentBlock"
+        >
+          <h4
+            class="postSubTitle variable"
+          >
+            MOCKED TECHNOLOGY
+          </h4>
+          <a
+            href="/posts/1"
+          >
+            <h2
+              class="postTitle"
+            >
+              Step-by-step guide to choosing great font pairs
+            </h2>
+          </a>
+          <span
+            class="postText"
+          >
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </span>
+        </div>
+      </article>
+      <article
+        class="postContainer"
+      >
+        <div
+          class="postImageWrapper"
+        >
+          <img
+            alt="post-image"
+            class="postImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <div
+          class="postContentBlock"
+        >
+          <h4
+            class="postSubTitle variable"
+          >
+            MOCKED STARTUP
+          </h4>
+          <a
+            href="/posts/2"
+          >
+            <h2
+              class="postTitle"
+            >
+              Design tips for designers that cover everything you need
+            </h2>
+          </a>
+          <span
+            class="postText"
+          >
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </span>
+        </div>
+      </article>
+      <article
+        class="postContainer"
+      >
+        <div
+          class="postImageWrapper"
+        >
+          <img
+            alt="post-image"
+            class="postImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <div
+          class="postContentBlock"
+        >
+          <h4
+            class="postSubTitle variable"
+          >
+            MOCKED BUSINESS
+          </h4>
+          <a
+            href="/posts/3"
+          >
+            <h2
+              class="postTitle"
+            >
+              How to build rapport with your web design clients
+            </h2>
+          </a>
+          <span
+            class="postText"
+          >
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </span>
+        </div>
+      </article>
+      <article
+        class="postContainer"
+      >
+        <div
+          class="postImageWrapper"
+        >
+          <img
+            alt="post-image"
+            class="postImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <div
+          class="postContentBlock"
+        >
+          <h4
+            class="postSubTitle variable"
+          >
+            MOCKED STARTUP
+          </h4>
+          <a
+            href="/posts/4"
+          >
+            <h2
+              class="postTitle"
+            >
+              Logo design trends to avoid in 2022
+            </h2>
+          </a>
+          <span
+            class="postText"
+          >
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </span>
+        </div>
+      </article>
+      <article
+        class="postContainer"
+      >
+        <div
+          class="postImageWrapper"
+        >
+          <img
+            alt="post-image"
+            class="postImage"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <div
+          class="postContentBlock"
+        >
+          <h4
+            class="postSubTitle variable"
+          >
+            MOCKED TECHNOLOGY
+          </h4>
+          <a
+            href="/posts/5"
+          >
+            <h2
+              class="postTitle"
+            >
+              8 Figma design systems you can download for free today
+            </h2>
+          </a>
+          <span
+            class="postText"
+          >
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </span>
+        </div>
+      </article>
+    </div>
+    <div
+      class="paginationController"
+    >
+      <button
+        class="paginationButton"
+        data-testid="prevButton"
+        disabled=""
+      >
+        &lt; 
+        Mocked prevButtonText
+      </button>
+      <button
+        class="paginationButton"
+        data-testid="nextButton"
+      >
+        Mocked nextButtonText
+         &gt;
+      </button>
+    </div>
+  </section>
+</div>
+`;

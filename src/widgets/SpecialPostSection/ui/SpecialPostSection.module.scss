@@ -1,0 +1,29 @@
+.specialPostSection {
+  position: relative;
+  display: flex;
+  margin-bottom: 128px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: 450px) {
+    margin-bottom: 32px;
+  }
+
+  .postImage {
+    width: 70%;
+    object-fit: cover;
+    height: auto;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+      height: 50%;
+    }
+  }
+}
